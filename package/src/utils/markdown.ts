@@ -5,7 +5,6 @@ import { join } from "path";
 const postsDirectory = join(process.cwd(), "markdown/blog");
 
 export function getPostSlugs() {
-  console.log(postsDirectory);
   return fs.readdirSync(postsDirectory);
 }
 

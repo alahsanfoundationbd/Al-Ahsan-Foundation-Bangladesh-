@@ -13,7 +13,6 @@ export const Donation = () => {
   }
   useEffect(()=>{
     if(donationAmount!==null && inputRef.current){
-       console.log(inputRef.current.value = `$${donationAmount}`)
     }
   },[donationAmount])
  

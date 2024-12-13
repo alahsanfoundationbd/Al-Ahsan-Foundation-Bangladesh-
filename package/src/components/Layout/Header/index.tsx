@@ -68,7 +68,6 @@ const Header: React.FC = () => {
  const info = useContext(DonationFormContext);
 
   useEffect(() => {
-    console.log("info", info)
   },[])
 
   const donationInfo = useContext(DonationFormContext);

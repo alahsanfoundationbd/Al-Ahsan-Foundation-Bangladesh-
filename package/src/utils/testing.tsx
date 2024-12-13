@@ -5,5 +5,4 @@ import path from "path"
 
 
 export const getPathFunc = () => {
-  console.log("bata", __filename);
 }

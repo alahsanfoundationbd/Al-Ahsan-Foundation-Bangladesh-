@@ -11,7 +11,6 @@ export const DocNavigation = () => {
     }
 
     useEffect(() => {
-     console.log(navItem);
     },[navItem])
 
     const DocsNav = [

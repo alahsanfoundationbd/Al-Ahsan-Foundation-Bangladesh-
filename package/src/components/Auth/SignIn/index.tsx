@@ -27,7 +27,6 @@ const Signin = ({signInOpen}:{signInOpen?:any}) => {
       username,
       password,
     });
-    console.log(result);
     if (result?.error) {
       // Handle successful sign-in
       setError(result.error);

@@ -3,11 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import SocialSignUp from "../SocialSignUp";
-import Logo from "@/components/Layout/Header/Logo"
+import Logo from "@/components/Layout/Header/Logo";
 import { useContext, useState } from "react";
 import Loader from "@/components/Common/Loader";
 import AuthDialogContext from "@/app/context/AuthDialogContext";
-const SignUp = ({signUpOpen}:{signUpOpen?:any}) => {
+const SignUp = ({ signUpOpen }: { signUpOpen?: any }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const authDialog = useContext(AuthDialogContext);
@@ -37,15 +37,14 @@ const SignUp = ({signUpOpen}:{signUpOpen?:any}) => {
         toast.error(err.message);
         setLoading(false);
       });
-      setTimeout(() => {
-        signUpOpen(false);
-      }, 1200);
-      authDialog?.setIsUserRegistered(true);
+    setTimeout(() => {
+      signUpOpen(false);
+    }, 1200);
+    authDialog?.setIsUserRegistered(true);
 
-      setTimeout(() => {
-        authDialog?.setIsUserRegistered(false);
-      }, 1100);
-
+    setTimeout(() => {
+      authDialog?.setIsUserRegistered(false);
+    }, 1100);
   };
 
   return (
