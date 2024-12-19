@@ -17,13 +17,13 @@ export const Introduction = () => {
             id:"1",
             packageName:"NextJs",
             img:nextImg,
-            version:"15.0.3"
+            version:"15.1.1"
         },
         {
             id:"2",
             packageName:"React",
             img:reactImg,
-            version:"18.3.1"
+            version:"19.0.0"
         },
         {
             id:"3",
@@ -35,7 +35,7 @@ export const Introduction = () => {
             id:"4",
             packageName:"NextAuth",
             img:nextauthImg ,
-            version:"4.24.7"
+            version:"4.24.11"
         },
         {
             id:"5",
