@@ -6,7 +6,7 @@ const Newsletter = () => {
     const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     return (
         <section className="lg:py-28 py-16 dark:bg-dark">
-            <div className="container mx-auto lg:max-w-screen-xl px-4">
+            <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-44" >
                     <div className="" data-aos="fade-left">
                         <div className="mb-8">
@@ -16,25 +16,25 @@ const Newsletter = () => {
                             <h2 className="text-3xl font-medium mb-6">
                                 Stay informed about new and upcoming causes
                             </h2>
-                            <p className="text-base text-muted dark:text-white dark:text-opacity-60">
+                            <p className="text-base text-muted dark:text-white/60">
                             Subscribe to our updates and stay connected with the latest causes and initiatives. Be among the first to learn how you can make a difference in urgent and upcoming projects!
                             </p>
                         </div>
                         <form>
                             <div className="mb-6">
-                                <input type="text" placeholder="Your name" className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded focus-visible:outline-none" />
+                                <input type="text" placeholder="Your name" className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded-sm focus-visible:outline-hidden" />
                             </div>
                             <div className="mb-6">
-                                <input type="email" placeholder="Your email address" className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded focus-visible:outline-none" />
+                                <input type="email" placeholder="Your email address" className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded-sm focus-visible:outline-hidden" />
                             </div>
                             <div className="flex justify-center mb-6">
-                                <button type="submit" className="text-white  bg-gradient-to-r from-error to-warning px-7 py-4 dark:hover:from-dark hover:from-white hover:to-white dark:hover:to-dark border border-transparent hover:border-error hover:text-error rounded w-full">
+                                <button type="submit" className="text-white  bg-linear-to-r from-error to-warning px-7 py-4 dark:hover:from-dark hover:from-white hover:to-white dark:hover:to-dark border border-transparent hover:border-error hover:text-error rounded-sm w-full">
                                     Subscribe
                                 </button>
                             </div>
                             <div className="flex items-center gap-2 mb-6">
                                 <input type="checkbox" name="condition" id="condition" />
-                                <label htmlFor="condition" className="text-base text-muted dark:text-white dark:text-opacity-60">I am agree with the terms and conditions</label>
+                                <label htmlFor="condition" className="text-base text-muted dark:text-white/60">I am agree with the terms and conditions</label>
                             </div>
                         </form>
                     </div>

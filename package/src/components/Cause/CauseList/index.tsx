@@ -5,7 +5,7 @@ import Image from "next/image";
 const CauseList = () => {
     return (
         <section className="lg:py-28 py-16 dark:bg-dark">
-            <div className="container mx-auto lg:max-w-screen-xl px-4">
+            <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                     {CauseData.map((item, index) => (
                         <Link href={`/cause/${item.slug}`} key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
@@ -23,12 +23,12 @@ const CauseList = () => {
                                     <h4 className="text-lg font-bold group-hover:text-primary mb-4">
                                         {item.title}
                                     </h4>
-                                    <p className="text-muted dark:text-white dark:text-opacity-60 text-base pb-8 border-b-2 border-border relative after:content-[''] after:absolute after:w-70% after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-gradient-to-r after:from-primary after:to-secondary">
+                                    <p className="text-muted dark:text-white/60 text-base pb-8 border-b-2 border-border relative after:content-[''] after:absolute after:w-70% after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-linear-to-r after:from-primary after:to-secondary">
                                         {item.text}
                                     </p>
                                     <div className="flex gap-4 mt-4">
                                         <div className="pr-4 border-r-2 dark:border-dark_border">
-                                            <h4 className=" text-muted dark:text-white dark:text-opacity-60 text-sm mb-1">
+                                            <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
                                                 Raised
                                             </h4>
                                             <h5 className="text-2xl ">
@@ -36,7 +36,7 @@ const CauseList = () => {
                                             </h5>
                                         </div>
                                         <div className="">
-                                            <h4 className=" text-muted dark:text-white dark:text-opacity-60 text-sm mb-1">
+                                            <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
                                                 Goal
                                             </h4>
                                             <h5 className="text-2xl ">

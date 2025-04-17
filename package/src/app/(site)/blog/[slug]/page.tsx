@@ -80,7 +80,7 @@ export default async function Post({ params }: any) {
   return (
     <>
       <section className=" relative pt-44 dark:bg-dark px-4">
-        <div className="container lg:max-w-screen-xl md:max-w-screen-md mx-auto">
+        <div className="container lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) mx-auto">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center">
             <div className="col-span-8">
               <div className="flex flex-col sm:flex-row">
@@ -97,7 +97,7 @@ export default async function Post({ params }: any) {
               <Image
                 src={post.authorImage}
                 alt="image"
-                className="bg-no-repeat bg-contain inline-block rounded-full !w-20 !h-20"
+                className="bg-no-repeat bg-contain inline-block rounded-full w-20! h-20!"
                 width={40}
                 height={40}
                 layout="responsive"
@@ -112,11 +112,11 @@ export default async function Post({ params }: any) {
         </div>
       </section>
       <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-32 px-4">
-        <div className="container lg:max-w-screen-xl md:max-w-screen-md mx-auto">
+        <div className="container lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) mx-auto">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">
               <div
-                className="z-20 mb-16 h-80 overflow-hidden rounded md:h-45">
+                className="z-20 mb-16 h-80 overflow-hidden rounded-sm md:h-45">
                 <Image
                   src={post.coverImage}
                   alt="image"
@@ -219,7 +219,7 @@ export default async function Post({ params }: any) {
                           placeholder="Email address "
                           className="p-3 dark:bg-dark border border-border dark:border-dark_border rounded-lg mb-2 w-full focus:outline-0 focus:border-primary dark:focus:border-primary"
                         />
-                        <button className="bg-gradient-to-r w-full from-primary to-secondary px-7 border text-base text-white border-transparent py-4 rounded hover:from-transparent hover:to-transparent hover:border-primary hover:text-primary">
+                        <button className="bg-linear-to-r w-full from-primary to-secondary px-7 border text-base text-white border-transparent py-4 rounded-sm hover:from-transparent hover:to-transparent hover:border-primary hover:text-primary">
                           Subscribe
                         </button>
                       </div>

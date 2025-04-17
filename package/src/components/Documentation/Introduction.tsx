@@ -49,7 +49,7 @@ export const Introduction = () => {
          <div id="version" className="md:scroll-m-[180px] scroll-m-28">
             
          {docNavbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" onClick={() => setDocNavbarOpen(false)} />
+          <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" onClick={() => setDocNavbarOpen(false)} />
         )}
 
             <div className="flex item-center justify-between">
@@ -64,16 +64,16 @@ export const Introduction = () => {
                             <div key={item.id} className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-border dark:border-dark_border">
                             <Image src={item.img} alt="npm-package"  className=" mx-auto w-10 h-10 " />
                             <h5 className="text-2xl font-bold mt-3.5 dark:text-white" >{`v${item.version}`}</h5>
-                            <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">{item.packageName}</p>
+                            <p className="text-base font-medium text-midnight_text dark:text-white/50">{item.packageName}</p>
                         </div>
                         )
                     })
                 }
               </div>
               <div className="mt-5">
-              <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Endeavor Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
-              <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">These theme is ready to use and you can totally customize as per your requirement.</p>
-              <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">Endeavor Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">These theme is ready to use and you can totally customize as per your requirement.</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
               </div>
 
          </div>

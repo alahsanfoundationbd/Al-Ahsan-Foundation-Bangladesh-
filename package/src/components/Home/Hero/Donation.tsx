@@ -26,21 +26,21 @@ export const Donation = () => {
             <input
               type="text"
               placeholder="First name"
-              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-[22px]">
             <input
               type="text"
               placeholder="Last name"
-              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-[22px]">
             <input
               type="email"
               placeholder="Email address"
-              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-2.5">
@@ -48,22 +48,22 @@ export const Donation = () => {
               type="text"
               ref={inputRef}
               placeholder="Choose donation amount"
-              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-2">
                         <div className="flex gap-4">
                             <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Test" onChange={(e:any) => getDonationAmount(e.target.value)} value={10} />
-                                <label htmlFor="Test" className="text-muted dark:text-white dark:text-opacity-60">$10</label>
+                                <label htmlFor="Test" className="text-muted dark:text-white/60">$10</label>
                             </div>
                             <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Offline" onChange={(e:any) => getDonationAmount(e.target.value)} value={50} />
-                                <label htmlFor="Offline" className="text-muted dark:text-white dark:text-opacity-60">$50</label>
+                                <label htmlFor="Offline" className="text-muted dark:text-white/60">$50</label>
                             </div>
                             <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Offline2" onChange={(e:any) => getDonationAmount(e.target.value)} value={100} />
-                                <label htmlFor="Offline2" className="text-muted dark:text-white dark:text-opacity-60">$100</label>
+                                <label htmlFor="Offline2" className="text-muted dark:text-white/60">$100</label>
                             </div>
                         </div>
             </div>
@@ -72,20 +72,20 @@ export const Donation = () => {
               type="number"
               onChange={(e:any) => {getDonationAmount(e.target.value)}}
               placeholder="$ Other value"
-              className="w-full placeholder:text-gray-400 border-b min-w-44 rounded-none border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full placeholder:text-gray-400 border-b min-w-44 rounded-none border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
-            <p className="text-[15px] text-nowrap dark:text-opacity-60 dark:text-white" >Other donation amount</p>
+            <p className="text-[15px] text-nowrap/60 dark:text-white" >Other donation amount</p>
           </div>
 
           <div className="flex gap-2 items-center">
                                 <input type="checkbox" id="account" name="account" />
-                                <label htmlFor="account" className="text-muted dark:text-white dark:text-opacity-60 text-base">I would like to donate anonymously</label>
+                                <label htmlFor="account" className="text-muted dark:text-white/60 text-base">I would like to donate anonymously</label>
                             </div>
                     
           <div className="mb-0 mt-6">
             <button
               type="submit"
-              className="text-white w-full text-base bg-gradient-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent"
+              className="text-white w-full text-base bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent"
             >
               Donate now
             </button>

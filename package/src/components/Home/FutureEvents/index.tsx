@@ -7,10 +7,10 @@ import { format } from "date-fns";
 const FutureEvents = () => {
   return (
     <section className="lg:py-28 py-16 dark:bg-dark">
-      <div className="container mx-auto lg:max-w-screen-xl px-4">
+      <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
         <div className="text-center">
           <h2 className="text-3xl font-medium mb-3" data-aos="fade-left" >Upcoming Events Near You</h2>
-          <p className="text-base text-muted dark:text-white dark:text-opacity-60 mx-auto lg:max-w-60%">
+          <p className="text-base text-muted dark:text-white/60 mx-auto lg:max-w-60%">
           Join us at local events to make a difference! Connect, volunteer, and support our mission in your community.
           </p>
         </div>
@@ -27,7 +27,7 @@ const FutureEvents = () => {
                     className="w-full h-auto group-hover:scale-110 scale-[1.01] duration-300"
                   />
                 </div>
-                <div className="px-3 py-2 bg-gradient-to-r from-primary to-secondary absolute z-1 top-3 right-3 rounded">
+                <div className="px-3 py-2 bg-linear-to-r from-primary to-secondary absolute z-1 top-3 right-3 rounded-sm">
                   <p className="text-white text-sm mb-0 text-center">
                     <span className="block ">
                       {format(new Date(item.date), "MMM")}
@@ -39,7 +39,7 @@ const FutureEvents = () => {
                 </div>
               </div>
               <h4 className="text-lg font-medium mb-6  group-hover:text-primary">{item.title}</h4>
-              <p className="text-muted dark:text-white dark:text-opacity-60 text-base mb-6">{item.text}</p>
+              <p className="text-muted dark:text-white/60 text-base mb-6">{item.text}</p>
               <h5 className="text-error hover:text-warning text-base font-medium flex gap-3 items-center w-fit">
                 Learn More
                 <span>

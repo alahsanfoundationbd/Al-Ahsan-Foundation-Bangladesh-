@@ -7,7 +7,7 @@ const ContactForm = () => {
   return (
     <>
       <section className="dark:bg-dark pb-24">
-        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
+        <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
             <div className="lg:col-span-6 lg:order-1 order-2">
               <h2 className="max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white">Get online consultation</h2>
@@ -55,7 +55,7 @@ const ContactForm = () => {
                   <div className="mx-0 my-2.5 flex-1">
                     <label htmlFor="date" className="pb-3 inline-block text-base">Date*</label>
                     <input id="date"
-                      className="w-full text-base px-4 rounded-lg  py-2.5 outline-none dark:text-white dark:bg-dark border-border border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0"
+                      className="w-full text-base px-4 rounded-lg  py-2.5 outline-hidden dark:text-white dark:bg-dark border-border border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0"
                       type="date"
                     />
                   </div>
@@ -63,13 +63,13 @@ const ContactForm = () => {
                     <label htmlFor="time" className="pb-3 inline-block text-base">Time*</label>
                     <input
                      id="time"
-                      className="w-full text-base px-4 rounded-lg py-2.5 border-border outline-none dark:text-white dark:bg-dark border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0"
+                      className="w-full text-base px-4 rounded-lg py-2.5 border-border outline-hidden dark:text-white dark:bg-dark border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0"
                       type="time"
                     />
                   </div>
                 </div>
                 <div className="mx-0 my-2.5 w-full">
-                  <Link href="#" className="bg-gradient-to-r from-primary to-secondary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:from-transparent hover:to-transparent hover:text-primary border hover:border-primary" type="submit">
+                  <Link href="#" className="bg-linear-to-r from-primary to-secondary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:from-transparent hover:to-transparent hover:text-primary border hover:border-primary" type="submit">
                     Make an appointment
                   </Link>
                 </div>

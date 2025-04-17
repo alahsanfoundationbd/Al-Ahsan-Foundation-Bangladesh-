@@ -12,7 +12,7 @@ const SignupPage = () => {
       <Breadcrumb pageName="Sign Up Page" />
 
       <div className="dark:bg-dark">
-        <div className="px-4 container mx-auto lg:max-w-screen-xl md:max-w-screen-md py-5">
+        <div className="px-4 container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) py-5">
           <SignUp />
         </div>
       </div>

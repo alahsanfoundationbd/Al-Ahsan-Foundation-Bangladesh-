@@ -79,12 +79,12 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 z-50 w-full transition-all ${sticky ? "shadow-lg dark:shadow-darkmd bg-white dark:bg-dark" : "shadow-none"}`}
     >
-      <div className="sm:bg-gradient-to-r bg-gradient-to-l md:from-primary md:to-secondary lg:py-0 py-2 bg-white dark:bg-dark">
-        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
+      <div className="sm:bg-linear-to-r bg-linear-to-l md:from-primary md:to-secondary lg:py-0 py-2 bg-white dark:bg-dark">
+        <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex items-center justify-between px-4">
           <div className="lg:hidden block">
             <Logo />
           </div>
-          <nav className="hidden lg:flex flex-grow items-center justify-start">
+          <nav className="hidden lg:flex grow items-center justify-start">
             {headerData.map((item, index) => (
               <HeaderLink key={index} item={item} />
             ))}
@@ -118,7 +118,7 @@ const Header: React.FC = () => {
               Sign In
             </Link>
             {isSignInOpen && (
-              <div ref={signInRef} className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 !m-0">
+              <div ref={signInRef} className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50 m-0!">
                 <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark">
                 <button
                   onClick={() => setIsSignInOpen(false)}
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
               Sign Up
             </Link>
             {isSignUpOpen && (
-              <div ref={signUpRef} className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 !m-0">
+              <div ref={signUpRef} className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50 m-0!">
                 <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark">
                 <button
                   onClick={() => setIsSignUpOpen(false)}
@@ -166,7 +166,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
+          <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" />
         )}
         <div
           ref={mobileMenuRef}
@@ -217,7 +217,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className="dark:bg-dark">
-      <div className="px-4 container mx-auto lg:max-w-screen-xl md:max-w-screen-md sm:flex lg:justify-between justify-center py-5 hidden">
+      <div className="px-4 container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) sm:flex lg:justify-between justify-center py-5 hidden">
         <div className="lg:block hidden">
           <Logo />
         </div>
@@ -230,7 +230,7 @@ const Header: React.FC = () => {
               height={32}
             />
             <div className="">
-              <p className="text-sm font-normal text-muted dark:text-white dark:text-opacity-60 mb-0">
+              <p className="text-sm font-normal text-muted dark:text-white/60 mb-0">
                 Email us at
               </p>
               <Link href="#" className="text-base font-semibold mb-0 hover:text-primary">
@@ -246,7 +246,7 @@ const Header: React.FC = () => {
               height={32}
             />
             <div className="">
-              <p className="text-sm font-normal text-muted dark:text-white dark:text-opacity-60 mb-0">
+              <p className="text-sm font-normal text-muted dark:text-white/60 mb-0">
                 Call us now
               </p>
               <Link href="#" className="text-base font-semibold mb-0 hover:text-primary">
@@ -262,7 +262,7 @@ const Header: React.FC = () => {
       </div>
       {/* Donation Popup */}
       {donationInfo?.isDonationOpen && (
-              <div  className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 !m-0">
+              <div  className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50 m-0!">
                 <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark">
                 <button
                   onClick={() => donationInfo?.setIsDonationOpen(false)}

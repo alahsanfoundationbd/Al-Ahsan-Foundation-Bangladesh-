@@ -8,7 +8,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
     return (
         <>
             <Link href={`/blog/${slug}`} className="group flex items-center gap-8">
-                <div className="overflow-hidden rounded">
+                <div className="overflow-hidden rounded-sm">
                     <Image
                         src={coverImage!}
                         alt="image"
@@ -21,7 +21,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                     <h4 className="font-medium text-lg group-hover:text-primary mb-3">
                         {title}
                     </h4>
-                    <p className="text-muted dark:text-white dark:text-opacity-60 text-base">
+                    <p className="text-muted dark:text-white/60 text-base">
                         by Mark Freeman / 23 May 2024
                     </p>
                 </div>

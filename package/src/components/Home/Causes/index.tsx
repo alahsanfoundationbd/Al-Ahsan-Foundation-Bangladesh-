@@ -33,11 +33,11 @@ const Causes = () => {
     };
     return (
         <section className="lg:py-28 py-16 bg-grey dark:bg-darkmode">
-            <div className="container mx-auto lg:max-w-screen-xl px-4">
+            <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <h2 className="text-center text-3xl font-medium mb-3" data-aos="fade-left">
                     Causes where need your help
                 </h2>
-                <p className="text-base text-muted dark:text-white dark:text-opacity-60 text-center">
+                <p className="text-base text-muted dark:text-white/60 text-center">
                 Support essential causes like healthcare, education, hunger relief, and empowering <br className="lg:block hidden" />  vulnerable communities. Together, we can create lasting change!
                 </p>
                 <div className="mt-20">
@@ -58,12 +58,12 @@ const Causes = () => {
                                         <h4 className="text-lg font-bold dark:text-white group-hover:text-primary mb-4">
                                             {item.title}
                                         </h4>
-                                        <p className="text-muted dark:text-white dark:text-opacity-60 text-base pb-8 border-b-2 border-border relative after:content-[''] after:absolute after:w-70% after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-gradient-to-r after:from-primary after:to-secondary">
+                                        <p className="text-muted dark:text-white/60 text-base pb-8 border-b-2 border-border relative after:content-[''] after:absolute after:w-70% after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-linear-to-r after:from-primary after:to-secondary">
                                             {item.text}
                                         </p>
                                         <div className="flex gap-4 mt-4">
                                             <div className="pr-4 border-r-2 dark:border-dark_border">
-                                                <h4 className=" text-muted dark:text-white dark:text-opacity-60 text-sm mb-1">
+                                                <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
                                                     Raised
                                                 </h4>
                                                 <h5 className="text-2xl ">
@@ -71,7 +71,7 @@ const Causes = () => {
                                                 </h5>
                                             </div>
                                             <div className="">
-                                                <h4 className=" text-muted dark:text-white dark:text-opacity-60 text-sm mb-1">
+                                                <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
                                                     Goal
                                                 </h4>
                                                 <h5 className="text-2xl ">

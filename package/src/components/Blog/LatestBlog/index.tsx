@@ -9,7 +9,7 @@ const LatestBlog: React.FC = () => {
 
     return (
         <section className="flex flex-wrap justify-center lg:py-24 py-16 dark:bg-darkmode bg-grey" id="blog">
-            <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
+            <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4">
                 <div className="flex items-center md:flex-nowrap flex-wrap justify-between mb-11">
                     <h4 className="text-[40px] leading-tight font-semibold">Latest blog & news</h4>
                     <Link href={"/blog"} className='flex items-center gap-2 hover:text-primary dark:hover:text-primary text-midnight_text dark:text-white'>

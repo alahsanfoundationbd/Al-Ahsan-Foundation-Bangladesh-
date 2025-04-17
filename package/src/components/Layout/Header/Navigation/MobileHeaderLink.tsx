@@ -15,9 +15,9 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
   let navString
 
   const counterLetter = item.label.slice(-1);
-  if(counterLetter === "s"){
-    navString = item.label.toLowerCase().substring(item.label.length -1, - 1);
-  }else{
+  if (counterLetter === "s") {
+    navString = item.label.toLowerCase().substring(item.label.length - 1, - 1);
+  } else {
     navString = item.label.toLowerCase();
   }
 
@@ -26,9 +26,8 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
         href={item.href}
         onClick={item.submenu ? handleToggle : undefined}
-        className={`flex items-center justify-between w-full py-2 px-3 text-black rounded-md dark:text-white dark:text-opacity-60 focus:outline-none  ${path.startsWith(`/${navString}`) ? "!bg-primary !text-white" : null} ${
-          path === item.href ? "!bg-primary !text-white " : ""
-        }`}
+        className={`flex items-center justify-between w-full py-2 px-3 text-black rounded-md dark:text-white/60 focus:outline-hidden  ${path.startsWith(`/${navString}`) ? "bg-primary! text-white!" : null} ${path === item.href ? "bg-primary! text-white! " : ""
+          }`}
       >
         {item.label}
         {item.submenu && (
@@ -55,7 +54,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
             <Link
               key={index}
               href={subItem.href}
-              className={`block py-2 px-3 text-gray-500  ${path === subItem.href ? "!text-primary" : null}`}
+              className={`block py-2 px-3 text-gray-500  ${path === subItem.href ? "text-primary!" : null}`}
             >
               {subItem.label}
             </Link>
