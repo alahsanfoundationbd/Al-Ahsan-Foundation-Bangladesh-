@@ -80,7 +80,7 @@ const FormPart = () => {
                         <button onClick={(e) => {
                             e.preventDefault();
                             donationInfo?.setIsDonationOpen(true)
-                        } } className="text-white text-sm bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent">Donate now</button>
+                        } } className="text-white text-sm bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent cursor-pointer">Donate now</button>
                     </div>
                 </form>
             </div>

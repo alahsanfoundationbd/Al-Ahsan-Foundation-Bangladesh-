@@ -115,7 +115,7 @@ const EventDetails: FC<EventProps> = ({
                     alt="icon"
                     width={16}
                     height={16}
-                    className="h-4 w-4"
+                    className="h-4 w-4 hover:opacity-70"
                   />
                 </Link>
                 <Link href="#">
@@ -124,7 +124,7 @@ const EventDetails: FC<EventProps> = ({
                     alt="icon"
                     width={16}
                     height={16}
-                    className="h-4 w-4"
+                    className="h-4 w-4 hover:opacity-70"
                   />
                 </Link>
                 <Link href="#">
@@ -133,7 +133,7 @@ const EventDetails: FC<EventProps> = ({
                     alt="icon"
                     width={16}
                     height={16}
-                    className="h-4 w-4"
+                    className="h-4 w-4 hover:opacity-70"
                   />
                 </Link>
                 <Link href="#">
@@ -142,7 +142,7 @@ const EventDetails: FC<EventProps> = ({
                     alt="icon"
                     width={16}
                     height={16}
-                    className="h-4 w-4"
+                    className="h-4 w-4 hover:opacity-70"
                   />
                 </Link>
               </div>

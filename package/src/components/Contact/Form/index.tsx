@@ -33,7 +33,7 @@ const ContactForm = () => {
     e.preventDefault();
     setLoader(true);
 
-    fetch("https://formsubmit.co/ajax/wrappixelvidhi@gmail.com", {
+    fetch("https://formsubmit.co/ajax/bhainirav772@gmail.com", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -145,7 +145,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 <div className="mx-0 my-2.5 w-full">
-                  <button type="submit" className="bg-linear-to-r from-primary to-secondary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:from-transparent hover:to-transparent hover:text-primary border hover:border-primary">
+                  <button type="submit" className="bg-linear-to-r from-primary to-secondary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:from-transparent hover:to-transparent hover:text-primary border hover:border-primary cursor-pointer">
                     Make an appointment
                   </button>
                 </div>

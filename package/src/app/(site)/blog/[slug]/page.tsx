@@ -137,7 +137,7 @@ export default async function Post({ params }: any) {
                     <div className="-mx-4 mb-8 flex flex-col">
                       <div className="w-full py-12 px-11 bg-white dark:bg-dark shadow-lg border-b-2 border-lightborder dark:border-dark_border rounded-t-lg">
                         <h2
-                          className="wow fadeInUp relative mb-5 text-2xl dark:text-white text-black  sm:text-3xl"
+                          className="wow fadeInUp relative mb-5 dark:text-white text-black text-2xl sm:text-3xl"
                           data-wow-delay=".1s"
                         >
                           Share
@@ -212,7 +212,7 @@ export default async function Post({ params }: any) {
                         </div>
                       </div>
                       <div className="w-full py-12 px-11 bg-white dark:bg-dark shadow-lg rounded-b-lg">
-                        <p className="text-24 mb-4">
+                        <p className="text-2xl sm:text-3xl mb-4">
                           Join our Newsletter
                         </p>
                         <input

@@ -85,7 +85,7 @@ export const Donation = () => {
           <div className="mb-0 mt-6">
             <button
               type="submit"
-              className="text-white w-full text-base bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent"
+              className="text-white w-full text-base bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent cursor-pointer"
             >
               Donate now
             </button>
