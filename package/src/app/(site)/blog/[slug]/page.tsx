@@ -219,7 +219,7 @@ export default async function Post({ params }: any) {
                           placeholder="Email address "
                           className="p-3 dark:bg-dark border border-border dark:border-dark_border rounded-lg mb-2 w-full focus:outline-0 focus:border-primary dark:focus:border-primary"
                         />
-                        <button className="bg-linear-to-r w-full from-primary to-secondary px-7 border text-base text-white border-transparent py-4 rounded-sm hover:from-transparent hover:to-transparent hover:border-primary hover:text-primary">
+                        <button className="bg-linear-to-r w-full from-primary to-secondary px-7 border text-base text-white border-transparent py-4 rounded-sm hover:from-transparent hover:to-transparent hover:border-primary hover:text-primary cursor-pointer">
                           Subscribe
                         </button>
                       </div>

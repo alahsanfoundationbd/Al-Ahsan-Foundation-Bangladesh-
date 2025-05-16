@@ -28,7 +28,7 @@ const Newsletter = () => {
                                 <input type="email" placeholder="Your email address" className="w-full p-4 border border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark rounded-sm focus-visible:outline-hidden" />
                             </div>
                             <div className="flex justify-center mb-6">
-                                <button type="submit" className="text-white  bg-linear-to-r from-error to-warning px-7 py-4 dark:hover:from-dark hover:from-white hover:to-white dark:hover:to-dark border border-transparent hover:border-error hover:text-error rounded-sm w-full">
+                                <button type="submit" className="text-white  bg-linear-to-r from-error to-warning px-7 py-4 dark:hover:from-dark hover:from-white hover:to-white dark:hover:to-dark border border-transparent hover:border-error hover:text-error rounded-sm w-full cursor-pointer">
                                     Subscribe
                                 </button>
                             </div>
