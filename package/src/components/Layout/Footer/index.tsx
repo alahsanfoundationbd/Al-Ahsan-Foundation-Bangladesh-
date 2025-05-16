@@ -51,7 +51,7 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <Link
-                    href="#"
+                    href="tel:1(888)1234567"
                     className="text-sm text-midnight_text dark:text-white mb-0 hover:text-primary!"
                   >
                     1 (888) 123 4567
@@ -67,7 +67,7 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <Link
-                    href="#"
+                    href="mailto:info@endeavor.com"
                     className="text-sm text-midnight_text dark:text-white mb-0 hover:text-primary!"
                   >
                     info@endeavor.com
@@ -117,10 +117,11 @@ const Footer: FC = () => {
           <p className="text-sm text-midnight_text dark:text-white">
             © All Rights Reserved by{" "}
             <Link
-              href="https://nextjs-templates.com/"
+              href="https://getnextjstemplates.com/"
+              target="_blank"
               className="hover:text-primary!"
             >
-              Next.js Templates
+              GetNextjs Templates
             </Link>
             .
           </p>

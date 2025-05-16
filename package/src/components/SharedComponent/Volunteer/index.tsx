@@ -16,7 +16,7 @@ const Volunteer = () => {
                     Join our mission to make a positive impact! As a volunteer, you’ll work directly with communities, bring hope, and help create lasting change.
                     </p>
                     <div className="flex justify-center ">
-                        <button onClick={() => donationInfo?.setIsDonationOpen(true)} className="text-white rounded-md bg-linear-to-r text-sm font-semibold from-error to-warning px-7 py-4 hover:from-transparent hover:to-transparent border border-transparent hover:border-error hover:text-error">
+                        <button onClick={() => donationInfo?.setIsDonationOpen(true)} className="text-white rounded-md bg-linear-to-r text-sm font-semibold from-error to-warning px-7 py-4 hover:from-transparent hover:to-transparent border border-transparent hover:border-error hover:text-error cursor-pointer">
                             Donate now
                         </button>
                     </div>

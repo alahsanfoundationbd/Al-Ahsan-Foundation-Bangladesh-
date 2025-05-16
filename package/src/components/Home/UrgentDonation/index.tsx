@@ -16,7 +16,7 @@ const UrgentDonation = () => {
                     <p className="text-muted dark:text-white/60 sm:text-base text-sm mb-7">
                     A child needs immediate surgery. Your help can save a life please contribute to their urgent medical care.
                     </p>
-                    <button onClick={() => donationInfo?.setIsDonationOpen(true)} className="bg-linear-to-r from-primary to-secondary px-7 border text-sm font-semibold text-white border-transparent py-4 rounded-sm hover:from-transparent hover:to-transparent  hover:border-primary hover:text-primary">
+                    <button onClick={() => donationInfo?.setIsDonationOpen(true)} className="bg-linear-to-r from-primary to-secondary px-7 border text-sm font-semibold text-white border-transparent py-4 rounded-sm hover:from-transparent hover:to-transparent  hover:border-primary hover:text-primary cursor-pointer">
                         Urgent donate
                     </button>
                 </div>

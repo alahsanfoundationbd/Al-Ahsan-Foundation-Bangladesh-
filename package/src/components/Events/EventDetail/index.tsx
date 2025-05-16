@@ -30,7 +30,7 @@ const EventDetails: FC<EventProps> = ({
     ? format(new Date(eventdate), "MMM dd, yyyy")
     : "Date not available";
   return (
-    <section className="sm:mt-28 pt-28 sm:pb-28 pb-12 dark:bg-dark">
+    <section className="sm:mt-28 pt-32 sm:pb-28 pb-12 dark:bg-dark">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
         <div className="grid grid-cols-12 gap-8">
           <div className="lg:col-span-9 col-span-12">

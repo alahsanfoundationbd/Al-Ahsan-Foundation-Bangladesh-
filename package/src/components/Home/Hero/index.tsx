@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <button
               onClick={() => donationInfo?.setIsDonationOpen(true)}
-              className="text-white bg-linear-to-r text-sm from-error to-warning px-7 py-4 hover:from-white hover:to-white dark:hover:from-dark dark:hover:to-dark border font-semibold border-transparent hover:border-error hover:text-error rounded-md"
+              className="text-white bg-linear-to-r text-sm from-error to-warning px-7 py-4 hover:from-white hover:to-white dark:hover:from-dark dark:hover:to-dark border font-semibold border-transparent hover:border-error hover:text-error rounded-md cursor-pointer"
             >
               Donate now
             </button>

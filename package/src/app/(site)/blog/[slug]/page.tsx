@@ -79,7 +79,7 @@ export default async function Post({ params }: any) {
 
   return (
     <>
-      <section className=" relative pt-44 dark:bg-dark px-4">
+      <section className=" relative pt-32 sm:pt-48 lg:pt-44 dark:bg-dark px-4">
         <div className="container lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) mx-auto">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center">
             <div className="col-span-8">

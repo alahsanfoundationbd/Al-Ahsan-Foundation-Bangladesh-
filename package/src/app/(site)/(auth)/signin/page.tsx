@@ -1,23 +1,20 @@
-import Signin from "@/components/Auth/SignIn";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import { Metadata } from "next";
+import Signin from '@/components/Auth/SignIn'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title:
-    "Sign In | Endeavor",
-};
+  title: 'Sign In | Endeavor',
+}
 
 const SigninPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign In Page" />
-      <div className="dark:bg-dark">
-        <div className="px-4 container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) py-5">
+      <div className='pt-32 sm:pt-56 pb-10 px-4 dark:bg-darkmode'>
+        <div className='container mx-auto max-w-25 shadow-xl overflow-hidden rounded-lg bg-white dark:bg-dark text-center px-8 py-14 sm:px-12 md:px-16'>
           <Signin />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default SigninPage;
+export default SigninPage

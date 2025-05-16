@@ -20,7 +20,7 @@ const Cause = () => {
     }
     return (
         <>
-            <section className="dark:bg-dark pt-44 py-24">
+            <section className="dark:bg-dark lg:pt-44 sm:pt-52 pt-32 py-24">
                 <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="lg:col-span-9 col-span-12">

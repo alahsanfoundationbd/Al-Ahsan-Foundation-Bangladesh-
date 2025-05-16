@@ -29,7 +29,7 @@ export const Introduction = () => {
             id:"3",
             packageName:"Tailwindcss",
             img:tailwindImg,
-            version:"3.4.1"
+            version:"4.1.2"
         },
         {
             id:"4",
@@ -53,7 +53,7 @@ export const Introduction = () => {
         )}
 
             <div className="flex item-center justify-between">
-            <h3 className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white" >Pacakge Versions</h3>
+            <h3 className=" text-black text-2xl mt-4 sm:mt-20 lg:mt-4 font-semibold mb-6 dark:text-white" >Pacakge Versions</h3>
             <button onClick={() => setDocNavbarOpen(true)} className="p-0"> <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" /></button>
             </div>
             
@@ -61,7 +61,7 @@ export const Introduction = () => {
                 {
                     PackageVersions && PackageVersions.map((item)=>{
                         return(
-                            <div key={item.id} className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-border dark:border-dark_border">
+                            <div key={item.id} className="lg:w-1/5 text-center  lg:border-e lg:last:border-e-0 border-border dark:border-dark_border">
                             <Image src={item.img} alt="npm-package"  className=" mx-auto w-10 h-10 " />
                             <h5 className="text-2xl font-bold mt-3.5 dark:text-white" >{`v${item.version}`}</h5>
                             <p className="text-base font-medium text-midnight_text dark:text-white/50">{item.packageName}</p>

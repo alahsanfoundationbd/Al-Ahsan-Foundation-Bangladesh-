@@ -33,9 +33,9 @@ export const PackageStructure = () => {
             <div className="flex">
               <div className="flex flex-col justify-between gap-2 mt-2">
                 {
-                  Counts.slice(0, 28).map((item) => {
+                  Counts.slice(0, 28).map((item,index) => {
                     return (
-                      <p className="text-xl text-black dark:text-white/50" >|</p>
+                      <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                     )
                   })
                 }

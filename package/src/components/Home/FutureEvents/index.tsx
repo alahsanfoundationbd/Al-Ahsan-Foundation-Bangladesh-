@@ -40,13 +40,14 @@ const FutureEvents = () => {
               </div>
               <h4 className="text-lg font-medium mb-6  group-hover:text-primary">{item.title}</h4>
               <p className="text-muted dark:text-white/60 text-base mb-6">{item.text}</p>
-              <h5 className="text-error hover:text-warning text-base font-medium flex gap-3 items-center w-fit">
+              <h5 className="group text-error hover:text-warning text-base font-medium flex gap-3 items-center w-fit">
                 Learn More
                 <span>
                   <Icon
                     icon="solar:arrow-right-linear"
                     width="20"
                     height="20"
+                    className="transition duration-300 ease-in-out group-hover:translate-x-1.5"
                   />
                 </span>
               </h5>
