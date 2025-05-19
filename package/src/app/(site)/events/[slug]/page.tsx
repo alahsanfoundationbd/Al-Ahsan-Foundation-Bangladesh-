@@ -1,29 +1,15 @@
-"use client";
-import Volunteer from "@/components/SharedComponent/Volunteer";
-import EventDetails from "@/components/Events/EventDetail";
-import { useParams } from "next/navigation";
-import { Eventdata } from "@/app/api/data";
-
-const Events = () => {
-  const { slug } = useParams();
-
-  const item = Eventdata.find((item) => item.slug === slug);
-  return (
-    <>
-      <EventDetails
-        title={item?.title}
-        detail={item?.detail}
-        category={item?.category}
-        location={item?.location}
-        eventdate={item?.date}
-        duration={item?.duration}
-        type={item?.type}
-        entrants={item?.entrants}
-        image={item?.image}
-      />
-      <Volunteer />
-    </>
-  );
+import EventDetail from "@/components/Events/EventDetail/EventDetail";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: "Event Detail | Endeavor",
 };
 
-export default Events;
+const Page = () => {
+    return (
+        <>
+            <EventDetail/>
+        </>
+    )
+}
+
+export default Page;

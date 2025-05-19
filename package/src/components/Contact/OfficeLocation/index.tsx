@@ -13,26 +13,26 @@ const Location = () => {
           <div className="">
             <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 border-b border-solid border-white/50 pb-11">
               <div className="col-span-3">
-                <h2 className="text-white text-[40px] leading-tight font-bold">Pune<br /> head office</h2>
+                <h2 className="text-white text-[34px] leading-tight font-semibold">Pune head office</h2>
               </div>
               <div className="col-span-3">
-                <p className="sm:text-2xl text-xl text-IceBlue font-normal max-w-64 leading-10 text-white/50">4292 Mapleview Drive Greenfield Zip code 38230</p>
+                <p className="text-lg text-white font-normal max-w-72">3502 Marcus Street Geraldine Zip code 35974</p>
               </div>
               <div className="col-span-3">
-                <Link href="mailto:headoffice@endeavor.com" className="sm:text-2xl text-xl text-white hover:text-midnight_text/80 font-medium underline">headoffice@endeavor.com</Link>
-                <Link href="tel:731-621-5503" className="sm:text-2xl text-xl text-white/80 hover:text-midnight_text/80 flex items-center gap-2  w-fit"><span className="text-white/40">Call</span>731-621-5503</Link>
+                <Link href="mailto:headoffice@endeavor.com" className="text-lg text-white hover:text-black font-semibold">headoffice@endeavor.com</Link>
+                <Link href="tel:731-621-5503" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call:</span>731-621-5503</Link>
               </div>
             </div>
             <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 pt-12">
               <div className="col-span-3">
-                <h2 className="text-white max-w-52 text-[40px] leading-tight font-bold">Bengaluru office</h2>
+                <h2 className="text-white text-[34px] leading-tight font-bold">Bengaluru office</h2>
               </div>
               <div className="col-span-3">
-                <p className="sm:text-2xl text-xl text-white/50 font-normal max-w-64 leading-10">3502 Marcus Street Geraldine Zip code 35974</p>
+                <p className="text-lg text-white font-normal max-w-72">4292 Mapleview Drive Greenfield Zip code 38230 </p>
               </div>
               <div className="col-span-3">
-                <Link href="mailto:office@endeavor.com" className="sm:text-2xl text-xl text-white hover:text-midnight_text/80 font-medium underline">office@endeavor.com</Link>
-                <Link href="tel:731-235-7993" className="sm:text-2xl text-white/80 hover:text-midnight_text/80 text-xl text-IceBlue flex items-center gap-2 w-fit"><span className="text-white/40">Call</span>731-235-7993</Link>
+                <Link href="mailto:office@endeavor.com" className="text-lg text-white hover:text-black font-semibold">office@endeavor.com</Link>
+                <Link href="tel:731-235-7993" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call</span>731-235-7993</Link>
               </div>
             </div>
           </div>

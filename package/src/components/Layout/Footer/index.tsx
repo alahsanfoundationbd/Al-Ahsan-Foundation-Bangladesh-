@@ -13,13 +13,8 @@ const Footer: FC = () => {
           <div className="lg:col-span-3 md:col-span-4 col-span-6">
             <Logo />
             <div className="mt-6">
-              <p className="text-sm font-light text-muted dark:text-white/60 mb-6">
-                You can relay on our amazing features list and also our customer
-                services will be great experience.
-              </p>
-              <p className="text-sm font-light text-muted dark:text-white/60 mb-0">
-                our amazing features list and also our customer services is
-                great.
+              <p className="text-base font-normal text-dustGray dark:text-white/60 mb-6">
+                You can relay on our amazing features list and also our customer services will be great experience.
               </p>
             </div>
           </div>
@@ -33,12 +28,11 @@ const Footer: FC = () => {
                   height={24}
                 />
                 <div className="">
-                  <h5 className="text-sm text-midnight_text dark:text-white mb-4">
+                  <h5 className="text-base font-normal text-black dark:text-white mb-4">
                     Endeavor Head Office
                   </h5>
-                  <p className="text-sm text-muted dark:text-white/60">
-                    134, Cornish Building, Some Near by area, New York, USA -
-                    34556
+                  <p className="text-base text-dustGray dark:text-white/60">
+                    134, Cornish Building, Some Near by area, New York, USA - 34556
                   </p>
                 </div>
               </div>
@@ -52,9 +46,9 @@ const Footer: FC = () => {
                 <div className="">
                   <Link
                     href="tel:1(888)1234567"
-                    className="text-sm text-midnight_text dark:text-white mb-0 hover:text-primary!"
+                    className="text-base text-black dark:text-white mb-0 hover:text-primary!"
                   >
-                    1 (888) 123 4567
+                    359 (0) 456 316
                   </Link>
                 </div>
               </div>
@@ -68,7 +62,7 @@ const Footer: FC = () => {
                 <div className="">
                   <Link
                     href="mailto:info@endeavor.com"
-                    className="text-sm text-midnight_text dark:text-white mb-0 hover:text-primary!"
+                    className="text-base text-black dark:text-white mb-0 hover:text-primary!"
                   >
                     info@endeavor.com
                   </Link>
@@ -77,15 +71,15 @@ const Footer: FC = () => {
             </div>
           </div>
           <div className="lg:col-span-3 md:col-span-4 col-span-6">
-            <h4 className="text-base text-midnight_text dark:text-white mb-4">
+            <h4 className="text-base text-black dark:text-white mb-4">
               Causes
             </h4>
             <ul className="pl-5">
               {footerLinks.slice(0, 5).map((item, index) => (
                 <li key={index} className="mb-5">
                   <Link
-                    href="#"
-                    className="text-sm relative text-muted dark:text-white/60 hover:text-primary dark:hover:text-primary hover:before:border-primary before:content-[''] before:absolute before:w-2 before:h-2 before:border-t-2 before:border-r-2 before:top-1 before:-left-5 before:rotate-45"
+                    href={item.href}
+                    className="text-base relative text-dustGray dark:text-white/60 hover:text-primary dark:hover:text-primary before:border-dustGray/60 hover:before:border-dustGray before:content-[''] before:absolute before:w-2 before:h-2 before:border-t-1 before:border-r-1 before:top-1 before:-left-5 before:rotate-45"
                   >
                     {item.link}
                   </Link>
@@ -94,16 +88,15 @@ const Footer: FC = () => {
             </ul>
           </div>
           <div className="lg:col-span-3 md:col-span-4 col-span-6">
-            <h4 className="text-base text-midnight_text dark:text-white mb-4">
-              Support
+            <h4 className="text-base text-black dark:text-white mb-4">
+              Other Links
             </h4>
             <ul className="pl-5">
               {footerLinks.slice(5, 10).map((item, index) => (
                 <li key={index} className="mb-5">
                   <Link
-                    href="#"
-                    className="text-sm relative text-muted dark:text-white/60 hover:text-primary dark:hover:text-primary hover:before:border-primary before:content-[''] before:absolute before:w-2 before:h-2 before:border-t-2 before:border-r-2 before:top-1 before:-left-5 before:rotate-45"
-                  >
+                    href={item.href}
+                    className="text-base relative text-dustGray dark:text-white/60 hover:text-primary dark:hover:text-primary before:border-dustGray/60 hover:before:border-dustGray before:content-[''] before:absolute before:w-2 before:h-2 before:border-t-1 before:border-r-1 before:top-1 before:-left-5 before:rotate-45">
                     {item.link}
                   </Link>
                 </li>
@@ -114,7 +107,7 @@ const Footer: FC = () => {
       </div>
       <div className="border-t border-border dark:border-dark_border">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex items-center justify-between py-6 lg:flex-nowrap flex-wrap lg:gap-0 gap-4">
-          <p className="text-sm text-midnight_text dark:text-white">
+          <p className="text-base text-dustGray dark:text-white">
             © All Rights Reserved by{" "}
             <Link
               href="https://getnextjstemplates.com/"

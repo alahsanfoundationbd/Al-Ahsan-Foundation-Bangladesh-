@@ -72,9 +72,8 @@ export const Donation = () => {
               type="number"
               onChange={(e:any) => {getDonationAmount(e.target.value)}}
               placeholder="$ Other value"
-              className="w-full placeholder:text-gray-400 border-b min-w-44 rounded-none border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
+              className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
-            <p className="text-[15px] text-nowrap/60 dark:text-white" >Other donation amount</p>
           </div>
 
           <div className="flex gap-2 items-center">

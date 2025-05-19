@@ -83,9 +83,9 @@ export const PackageStructure = () => {
                           <div className="flex">
                             <div className="flex flex-col justify-between gap-2 mt-2">
                               {
-                                Counts.slice(0, 26).map((item) => {
+                                Counts.slice(0, 26).map((item,index) => {
                                   return (
-                                    <p className="text-xl text-black dark:text-white/50" >|</p>
+                                    <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                                   )
                                 })
                               }
@@ -105,9 +105,9 @@ export const PackageStructure = () => {
                                 <div className="flex">
                                   <div className="flex flex-col justify-between gap-2 mt-2">
                                     {
-                                      Counts.slice(0, 20).map((item) => {
+                                      Counts.slice(0, 20).map((item,index) => {
                                         return (
-                                          <p className="text-xl text-black dark:text-white/50" >|</p>
+                                          <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                                         )
                                       })
                                     }
@@ -153,9 +153,9 @@ export const PackageStructure = () => {
                                             <div className="flex">
                                               <div className="flex flex-col justify-between gap-1 mt-2">
                                                 {
-                                                  Counts.slice(0, 2).map((item) => {
+                                                  Counts.slice(0, 2).map((item,index) => {
                                                     return (
-                                                      <p className="text-xl text-black dark:text-white/50" >|</p>
+                                                      <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                                                     )
                                                   })
                                                 }
@@ -283,9 +283,9 @@ export const PackageStructure = () => {
                                       <div className="flex">
                                         <div className="flex flex-col justify-between gap-2 mt-2">
                                           {
-                                            Counts.slice(0, 2).map((item) => {
+                                            Counts.slice(0, 2).map((item,index) => {
                                               return (
-                                                <p className="text-xl text-black dark:text-white/50" >|</p>
+                                                <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                                               )
                                             })
                                           }
@@ -338,9 +338,9 @@ export const PackageStructure = () => {
                                       <div className="flex">
                                         <div className="flex flex-col justify-between gap-2 mt-2">
                                           {
-                                            Counts.slice(0, 1).map((item) => {
+                                            Counts.slice(0, 1).map((item,index) => {
                                               return (
-                                                <p className="text-xl text-black dark:text-white/50" >|</p>
+                                                <p key={index} className="text-xl text-black dark:text-white/50" >|</p>
                                               )
                                             })
                                           }

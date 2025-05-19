@@ -12,6 +12,7 @@ const BlogPage = () => {
         <>
             <HeroSub
                 title="Blog"
+                bgImage="/images/background/blog-banner-img.avif"
             />
             <BlogList />
             <Volunteer />

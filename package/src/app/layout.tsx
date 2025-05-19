@@ -1,4 +1,4 @@
-import { Montserrat } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
@@ -8,7 +8,7 @@ import Aoscompo from "@/utils/aos";
 import { DonationProvider } from "./context/donationContext";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
-const montserrat = Montserrat({ subsets: ["latin"] });
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 import NextTopLoader from 'nextjs-toploader';
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={montserrat.className}>
+      <body className={bricolage.className}>
       <NextTopLoader color="#FF4D7E" />
       <DonationProvider>
         <AuthDialogProvider>

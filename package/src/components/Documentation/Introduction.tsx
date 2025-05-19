@@ -53,7 +53,7 @@ export const Introduction = () => {
         )}
 
             <div className="flex item-center justify-between">
-            <h3 className=" text-black text-2xl mt-4 sm:mt-20 lg:mt-4 font-semibold mb-6 dark:text-white" >Pacakge Versions</h3>
+            <h3 className=" text-black text-2xl mt-4 sm:mt-20 lg:mt-4 font-semibold mb-6 dark:text-white" >Package Versions</h3>
             <button onClick={() => setDocNavbarOpen(true)} className="p-0"> <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" /></button>
             </div>
             

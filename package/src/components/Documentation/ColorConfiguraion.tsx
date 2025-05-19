@@ -7,7 +7,7 @@ export const ColorConfiguration = () => {
                     For any change in colors : /src/utils/extendedConfig.ts</p>
                 <div className="py-4 px-5 rounded-md bg-black mt-8">
                     <p className="text-sm text-gray-400 flex flex-col gap-2">
-                        <span>--color-primary: #2cdd9b;</span>
+                        <span>--color-primary: #1AB7BA;</span>
                         <span>--color-darkprimary: #28cf91;</span>
                         <span>--color-secondary: #1dc8cd;</span>
                         <span>--color-midnight_text: #263238;</span>
@@ -22,6 +22,7 @@ export const ColorConfiguration = () => {
                         <span>--color-darklight: #000f30;</span>
                         <span>--color-dark_border: #203535;</span>
                         <span>--color-dark: #00180f;</span>
+                        <span>--color-dustGray: #464A59;</span>
                     </p>
                 </div>
             </div>
@@ -30,7 +31,7 @@ export const ColorConfiguration = () => {
                     For change , go to : /src/utils/extendedConfig.ts</p>
                 <div className="py-4 px-5 rounded-md bg-black mt-8">
                     <p className="text-sm text-gray-400 flex flex-col gap-2">
-                        <span>--color-primary: #2cdd9b;</span>
+                        <span>--color-primary: #1AB7BA;</span>
                         <span>--color-darkprimary: #28cf91;</span>
                     </p>
                 </div>

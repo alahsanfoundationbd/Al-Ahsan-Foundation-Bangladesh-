@@ -9,39 +9,32 @@ const CauseList = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                     {CauseData.map((item, index) => (
                         <Link href={`/cause/${item.slug}`} key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
-                            <div className="bg-white dark:bg-darkmode group h-full flex flex-col rounded-md">
-                                <div className="overflow-hidden flex-1">
+                            <div className="bg-white dark:bg-darkmode border dark:border-dark_border group h-full flex flex-col rounded-md">
+                                <div className="overflow-hidden h-[250px] rounded-t-md">
                                     <Image
                                         src={item.image}
                                         alt="image"
                                         width={350}
                                         height={250}
-                                        className="w-full h-auto group-hover:scale-110 duration-300"
+                                        className="w-full h-full object-cover group-hover:scale-110 duration-300 rounded-t-md"
                                     />
                                 </div>
-                                <div className="px-8 pt-8 pb-6 shadow-cause-shadow flex-1 flex flex-col justify-between">
-                                    <h4 className="text-lg font-bold group-hover:text-primary mb-4">
+                                <div className="p-8 shadow-cause-shadow flex-1 flex flex-col justify-between rounded-b-md">
+                                    <h4 className="text-midnight_text text-lg font-bold dark:text-white group-hover:text-primary mb-4">
                                         {item.title}
                                     </h4>
-                                    <p className="text-muted dark:text-white/60 text-base pb-8 border-b-2 border-border relative after:content-[''] after:absolute after:w-70% after:h-0.5 after:-bottom-0.5 after:left-0 after:bg-linear-to-r after:from-primary after:to-secondary">
-                                        {item.text}
-                                    </p>
-                                    <div className="flex gap-4 mt-4">
-                                        <div className="pr-4 border-r-2 dark:border-dark_border">
-                                            <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
+                                    <div className='grid grid-cols-2 mt-4 border dark:border-dark_border rounded-md'>
+                                        <div className='border-r dark:border-dark_border p-3'>
+                                            <h4 className=' text-black dark:text-white/60 text-base font-medium'>
                                                 Raised
                                             </h4>
-                                            <h5 className="text-2xl ">
-                                                {item.raised}
-                                            </h5>
+                                            <h5 className='text-2xl font-medium text-primary'>{item.raised}</h5>
                                         </div>
-                                        <div className="">
-                                            <h4 className=" text-muted dark:text-white/60 text-sm mb-1">
+                                        <div className='p-3'>
+                                            <h4 className=' text-black dark:text-white/60 text-base font-medium'>
                                                 Goal
                                             </h4>
-                                            <h5 className="text-2xl ">
-                                                {item.goal}
-                                            </h5>
+                                            <h5 className='text-2xl font-medium'>{item.goal}</h5>
                                         </div>
                                     </div>
                                 </div>

@@ -159,15 +159,14 @@ const ContactForm = () => {
                 </div>
               )}
             </div>
-            <div className="lg:col-span-6 lg:order-2 order-1">
+            <div className="lg:col-span-6 lg:order-2 order-1 h-[600px]">
               <Image
                 src="/images/contact-page/contact.jpg"
                 alt="Contact"
                 width={1300}
                 height={0}
                 quality={100}
-                style={{ width: '100%', height: 'auto' }}
-                className="bg-no-repeat bg-contain rounded-md"
+                className="w-full h-full object-cover bg-no-repeat rounded-md"
               />
             </div>
           </div>

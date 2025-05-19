@@ -13,7 +13,8 @@ const page = () => {
   return (
     <>
       <HeroSub
-        title="Contact Us"
+        title="Contact"
+        bgImage="/images/background/contact-banner-img.avif"
       />
       <ContactInfo />
       <ContactForm />

@@ -37,7 +37,7 @@
   --z-index-2: 2;
   --z-index-999: 999;
 
-  --color-primary: #2cdd9b;
+  --color-primary: #1AB7BA;
   --color-darkprimary: #28cf91;
   --color-secondary: #1dc8cd;
   --color-midnight_text: #263238;
@@ -52,6 +52,7 @@
   --color-darklight: #000f30;
   --color-dark_border: #203535;
   --color-dark: #00180f;
+  --color-dustGray: #464A59;
 }
 
 /*

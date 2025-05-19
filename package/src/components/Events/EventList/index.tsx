@@ -12,39 +12,30 @@ const EventList = () => {
           {Eventdata.map((item, index) => (
             <Link key={index} href={`/events/${item.slug}`} className="group" data-aos="fade-up" data-aos-delay={`${index * 120}`}>
               <div className="relative overflow-hidden mb-8">
-                <Image
-                  src={item.image}
-                  alt="image"
-                  width={350}
-                  height={200}
-                  className="w-full h-auto group-hover:scale-110 duration-300 scale-[1.01]" 
-                />
-                <div className="px-3 py-2 bg-linear-to-r from-primary to-secondary absolute z-1 top-3 right-3 rounded-sm">
-                  <p className="text-white text-sm mb-0 text-center">
-                    <span className="block ">
-                      {format(new Date(item.date), "MMM")}
+                <div className="h-[250px]">
+                  <Image
+                    src={item.image}
+                    alt="image"
+                    width={350}
+                    height={200}
+                    className="w-full h-full object-cover group-hover:scale-110 duration-300 scale-[1.01]"
+                  />
+                </div>
+                <div className="px-3 py-1 bg-white absolute z-1 top-3 right-3 rounded-md">
+                  <p className="flex items-center text-black text-sm mb-0 text-center">
+                    <span className="block text-base">
+                      {format(new Date(item.date), "MMM")} {format(new Date(item.date), "dd")}, {format(new Date(item.date), "yyyy")}
                     </span>
-                    <span className="block text-2xl">
-                      {format(new Date(item.date), "dd")}
+                    <span className="block text-base">
                     </span>
                   </p>
                 </div>
               </div>
-              <h4 className="text-lg font-medium mb-6 group-hover:text-primary">
+              <h4 className="text-lg font-medium mb-3.5 group-hover:text-primary">
                 {item.title}
               </h4>
               <p className="text-muted dark:text-white/60 text-base mb-6">{item.text}</p>
-              <h5 className="group text-error hover:text-warning text-base font-medium flex gap-3 items-center w-fit">
-                Learn More
-                <span>
-                  <Icon
-                    icon="solar:arrow-right-linear"
-                    width="20"
-                    height="20"
-                    className="transition duration-300 ease-in-out group-hover:translate-x-1.5"
-                  />
-                </span>
-              </h5>
+
             </Link>
           ))}
         </div>

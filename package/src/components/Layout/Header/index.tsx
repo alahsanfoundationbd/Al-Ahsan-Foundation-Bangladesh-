@@ -106,7 +106,7 @@ const Header: React.FC = () => {
         ? 'shadow-lg dark:shadow-darkmd bg-white dark:bg-dark'
         : 'shadow-none'
         }`}>
-      <div className='sm:bg-linear-to-r bg-linear-to-l md:from-primary md:to-secondary lg:py-0 py-2 bg-white dark:bg-dark'>
+      <div className='bg-primary lg:py-0 py-2 dark:bg-primary'>
         <div className='container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex items-center justify-between px-4'>
           <div className='lg:hidden block'>
             <Logo />
@@ -171,7 +171,7 @@ const Header: React.FC = () => {
                 </Link>
                 <Link
                   href={'./signup'}
-                  className='hidden lg:block text-sm bg-dark hover:bg-dark/90 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap'
+                  className='hidden lg:block text-sm bg-black hover:bg-black/80 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap'
                 >
                   Sign Up
                 </Link>
@@ -302,7 +302,7 @@ const Header: React.FC = () => {
             </div>
             <button
               onClick={() => info?.setIsDonationOpen(true)}
-              className='text-error text-sm font-semibold border border-error py-4 px-7 rounded-md ml-8 hover:bg-error hover:text-white cursor-pointer'>
+              className='text-error text-base font-semibold border border-error py-4 px-7 rounded-md ml-8 hover:bg-error hover:text-white cursor-pointer'>
               Donate now
             </button>
           </div>
@@ -314,7 +314,7 @@ const Header: React.FC = () => {
           <div className='relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark'>
             <button
               onClick={() => donationInfo?.setIsDonationOpen(false)}
-              className=' hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-full absolute -top-5 -right-3 mr-8 mt-8'
+              className=' hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-full absolute -top-5 -right-3 mr-8 mt-8 cursor-pointer'
               aria-label='Close Sign In Modal'>
               <Icon
                 icon='ic:round-close'
