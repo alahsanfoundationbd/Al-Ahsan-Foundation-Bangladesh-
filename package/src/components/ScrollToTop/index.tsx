@@ -33,7 +33,7 @@ export default function ScrollToTop() {
     <div className="fixed bottom-8 right-8 z-999">
       <div className="flex items-center gap-2.5">
         <Link href={"https://getnextjstemplates.com/products/endeavor-pro-nextjs-charity-website-template"} className="hidden lg:block bg-error text-sm hover:bg-error/90 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap">
-          Buy Now
+          Get This Template
         </Link>
         {isVisible && (
           <div
