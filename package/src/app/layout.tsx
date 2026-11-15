@@ -1,4 +1,4 @@
-import { Bricolage_Grotesque } from "next/font/google";
+import { Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
@@ -8,7 +8,7 @@ import Aoscompo from "@/utils/aos";
 import { DonationProvider } from "./context/donationContext";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
+const bricolage = Noto_Sans_Bengali({ subsets: ["bengali", "latin"] });
 import NextTopLoader from 'nextjs-toploader';
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="bn" suppressHydrationWarning>
       <body className={bricolage.className}>
       <NextTopLoader color="#FF4D7E" />
       <DonationProvider>
