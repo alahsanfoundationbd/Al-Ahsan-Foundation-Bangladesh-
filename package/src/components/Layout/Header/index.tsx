@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useContext, useEffect, useRef, useState } from 'react'
-import { headerData } from '../Header/Navigation/menuData'
+import { defaultHeaderData } from '../Header/Navigation/menuData'
+import { useSite } from '@/app/context/SiteContext'
 import Logo from './Logo'
 import Image from 'next/image'
 import HeaderLink from '../Header/Navigation/HeaderLink'
@@ -18,6 +19,8 @@ import { UserRegistered } from '@/components/Auth/AuthDialog/UserRegistered'
 import { signOut, useSession } from 'next-auth/react'
 
 const Header: React.FC = () => {
+  const { menu, settings } = useSite()
+  const headerData = (menu.length ? menu : defaultHeaderData).filter((item: any) => item.visible !== false).sort((a: any, b: any) => (a.order || 0) - (b.order || 0))
   const { data: session } = useSession();
   const pathUrl = usePathname()
   const { theme, setTheme } = useTheme()
@@ -102,6 +105,7 @@ const Header: React.FC = () => {
 
   return (
     <header
+      style={settings?.theme ? { backgroundColor: settings.theme.navbarBg, color: settings.theme.navbarText } : undefined}
       className={`fixed top-0 z-50 w-full transition-all ${sticky
         ? 'shadow-lg dark:shadow-darkmd bg-white dark:bg-dark'
         : 'shadow-none'
