@@ -14,7 +14,7 @@ const Footer: FC = () => {
             <Logo />
             <div className="mt-6">
               <p className="text-base font-normal text-dustGray dark:text-white/60 mb-6">
-                You can relay on our amazing features list and also our customer services will be great experience.
+                আপনারা আমাদের ফাউন্ডেশনের অসাধারণ সব সেবাসমূহের ওপর আস্থা রাখতে পারেন। আমরা প্রতিটি সেবা সর্বোচ্চ আন্তরিকতা, নিষ্ঠা ও পেশাদারিত্বের সঙ্গে প্রদান করতে প্রতিশ্রুতিবদ্ধ। পাশাপাশি, আমাদের উন্নত গ্রাহকসেবা আপনাদের জন্য নিশ্চিত করবে একটি সন্তোষজনক, নির্ভরযোগ্য ও আনন্দদায়ক অভিজ্ঞতা।
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Footer: FC = () => {
           </div>
           <div className="lg:col-span-3 md:col-span-4 col-span-6">
             <h4 className="text-base text-black dark:text-white mb-4">
-              Other Links
+              প্রয়োজনীয় লিংকসমূহ
             </h4>
             <ul className="pl-5">
               {footerLinks.slice(5, 10).map((item, index) => (
