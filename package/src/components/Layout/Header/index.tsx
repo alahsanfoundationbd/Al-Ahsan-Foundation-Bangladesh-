@@ -158,7 +158,7 @@ const Header: React.FC = () => {
                   onClick={() => handleSignOut()}
                   className='hidden lg:block bg-error text-sm hover:bg-error/90 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap cursor-pointer'
                 >
-                  Sign Out
+                  সাইন আউট 
                 </button>
               </>
             ) : (
@@ -167,13 +167,13 @@ const Header: React.FC = () => {
                   href={'./signin'}
                   className='hidden lg:block bg-error text-sm hover:bg-error/90 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap'
                 >
-                  Sign In
+                  সাইন ইন
                 </Link>
                 <Link
                   href={'./signup'}
                   className='hidden lg:block text-sm bg-black hover:bg-black/80 text-white px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap'
                 >
-                  Sign Up
+                 সাইন আপ
                 </Link>
               </>
             )}
@@ -231,7 +231,7 @@ const Header: React.FC = () => {
                       setNavbarOpen(false)
                       handleSignOut()
                     }}>
-                    Sign Out
+                    সাইন আউট
                   </button>
                 </>
               ) : (
@@ -242,7 +242,7 @@ const Header: React.FC = () => {
                     onClick={() => {
                       setNavbarOpen(false)
                     }}>
-                    Sign In
+                    সাইন ইন
                   </Link>
                   <Link
                     href={'./signup'}
@@ -250,7 +250,7 @@ const Header: React.FC = () => {
                     onClick={() => {
                       setNavbarOpen(false)
                     }}>
-                    Sign Up
+                    সাইন আপ
                   </Link>
                 </>
               )}
@@ -273,7 +273,7 @@ const Header: React.FC = () => {
               />
               <div className=''>
                 <p className='text-sm font-normal text-muted dark:text-white/60 mb-0'>
-                  Email us at
+                  আমাদের ইমেইল করুন
                 </p>
                 <Link
                   href='mailto: alahsanfoundationbangladesh@gmail.com'
@@ -291,7 +291,7 @@ const Header: React.FC = () => {
               />
               <div className=''>
                 <p className='text-sm font-normal text-muted dark:text-white/60 mb-0'>
-                  Call us now
+                  আমাদের সাথে যোগাযোগ করুন
                 </p>
                 <Link
                   href='tel:+8809611399315'
@@ -303,7 +303,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => info?.setIsDonationOpen(true)}
               className='text-error text-base font-semibold border border-error py-4 px-7 rounded-md ml-8 hover:bg-error hover:text-white cursor-pointer'>
-              Donate now
+              এখনই দান করুন
             </button>
           </div>
         </div>
