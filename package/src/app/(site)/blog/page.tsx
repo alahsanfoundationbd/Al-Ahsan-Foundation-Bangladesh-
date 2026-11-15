@@ -4,7 +4,7 @@ import HeroSub from "@/components/SharedComponent/HeroSub";
 import Volunteer from "@/components/SharedComponent/Volunteer";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Blog | Endeavor",
+  title: "Blog | Al-Ahsan Foundation Bangladesh",
 };
 
 const BlogPage = () => {
