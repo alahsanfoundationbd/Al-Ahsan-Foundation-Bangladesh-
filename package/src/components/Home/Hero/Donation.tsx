@@ -55,15 +55,15 @@ export const Donation = () => {
                         <div className="flex gap-4">
                             <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Test" onChange={(e:any) => getDonationAmount(e.target.value)} value={10} />
-                                <label htmlFor="Test" className="text-muted dark:text-white/60">$10</label>
+                                <label htmlFor="Test" className="text-muted dark:text-white/60">৳500</label>
                             </div>
                             <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Offline" onChange={(e:any) => getDonationAmount(e.target.value)} value={50} />
-                                <label htmlFor="Offline" className="text-muted dark:text-white/60">$50</label>
+                                <label htmlFor="Offline" className="text-muted dark:text-white/60">৳700</label>
                             </div>
-                            <div className="flex gap-2">
+                        <div className="flex gap-2">
                                 <input type="radio" name="donation" id="Offline2" onChange={(e:any) => getDonationAmount(e.target.value)} value={100} />
-                                <label htmlFor="Offline2" className="text-muted dark:text-white/60">$100</label>
+                                <label htmlFor="Offline2" className="text-muted dark:text-white/60">৳1000</label>
                             </div>
                         </div>
             </div>
@@ -71,7 +71,7 @@ export const Donation = () => {
             <input
               type="number"
               onChange={(e:any) => {getDonationAmount(e.target.value)}}
-              placeholder="$ Other value"
+              placeholder="৳ Other value"
               className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
