@@ -1,31 +1,31 @@
 import { HeaderItem } from "@/types/menu";
 
 export const headerData: HeaderItem[] = [
-  { label: "Home", href: "/" },
+  { label: "হোম", href: "/" },
   {
-    label: "Causes",
+    label: "আমাদের কার্যক্রম",
     href: "#",
     submenu: [
-      { label: "Cause list", href: "/cause" },
-      { label: "Cause details", href: "/cause/cause-1" },
+      { label: "কার্যক্রম সমূহ", href: "/cause" },
+      { label: "কার্যক্রমের বিবরণ", href: "/cause/cause-1" },
     ],
   },
   {
-    label: "Events",
+    label: "ইভেন্ট",
     href: "#",
     submenu: [
-      { label: "Events list", href: "/events" },
-      { label: "Events details", href: "/events/event-1" },
+      { label: "ইভেন্ট সমূহ", href: "/events" },
+      { label: "ইভেন্টের বিবরণ", href: "/events/event-1" },
     ],
   },
   {
-    label: "Blog",
+    label: "ব্লগ",
     href: "#",
     submenu: [
-      { label: "Blog list", href: "/blog" },
-      { label: "Blog details", href: "/blog/blog_1" },
+      { label: "ব্লগ সমূহ", href: "/blog" },
+      { label: "ব্লগের বিবরণ", href: "/blog/blog_1" },
     ],
   },
-  { label: "Contact", href: "/contact" },
-  { label: "Documentation", href: "/documentation#version" },
+  { label: "যোগাযোগ", href: "/contact" },
+  { label: "ডকুমেন্ট", href: "/documentation#version" },
 ];
