@@ -294,9 +294,9 @@ const Header: React.FC = () => {
                   Call us now
                 </p>
                 <Link
-                  href='tel:703(123)4567'
+                  href='tel:+8809611399315'
                   className='text-base font-semibold mb-0 hover:text-primary'>
-                  703 (123) 4567
+                  +8809611399315
                 </Link>
               </div>
             </div>
