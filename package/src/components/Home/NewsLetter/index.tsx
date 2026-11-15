@@ -37,7 +37,7 @@ const Newsletter = () => {
                     <div className="lg:mt-0 mt-8">
                         <div className="flex justify-between items-center border-b border-border dark:border-dark_border focus:border-primary dark:focus:border-primary dark:bg-dark pb-6 mb-8 focus-visible:outline-none-10">
                             <h2 className="text-3xl font-semibold">
-                                Latest news at endeavor
+                                Latest news at Al-Ahsan Foundation Bangladesh 
                             </h2>
                             <Link href="/blog" className="text-error hover:text-primary text-base">
                                 View all
