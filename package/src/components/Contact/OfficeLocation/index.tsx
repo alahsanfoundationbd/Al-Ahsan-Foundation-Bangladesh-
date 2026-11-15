@@ -32,7 +32,7 @@ const Location = () => {
               </div>
               <div className="col-span-3">
                 <Link href="mailto: alahsanfoundationbangladesh@gmail.com" className="text-lg text-white hover:text-black font-semibold">office@endeavor.com</Link>
-                <Link href="tel:731-235-7993" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call</span>731-235-7993</Link>
+                <Link href="tel:+8809611399315" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call</span>+8809611399315</Link>
               </div>
             </div>
           </div>
