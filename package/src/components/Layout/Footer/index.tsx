@@ -61,10 +61,10 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <Link
-                    href="mailto:info@endeavor.com"
+                    href="mailto: alahsanfoundationbangladesh@gmail.com"
                     className="text-base text-black dark:text-white mb-0 hover:text-primary!"
                   >
-                    info@endeavor.com
+                    ala
                   </Link>
                 </div>
               </div>
