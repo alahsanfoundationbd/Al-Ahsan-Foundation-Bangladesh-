@@ -32,7 +32,7 @@ const Footer: FC = () => {
                     Al-Ahsan Foundation Bangladesh Head Office
                   </h5>
                   <p className="text-base text-dustGray dark:text-white/60">
-                    134, Cornish Building, Some Near by area, New York, USA - 34556
+                    Dewanganj, Jamalpur, Bangladesh - 2030
                   </p>
                 </div>
               </div>
