@@ -10,12 +10,12 @@ export const PackageStructure = () => {
   return (
     <div id="structure" className="md:scroll-m-[130px] scroll-m-28">
       <h3 className=" text-black text-2xl font-semibold mt-8 dark:text-white">
-        Pacakge Structure
+        প্যাকেজের কাঠামো
       </h3>
       <div className="rounded-md p-6 pt-3 border border-border dark:border-dark_border mt-6">
         <div className="flex items-center gap-4">
           <h5 className="text-base font-medium mt-3 mb-1">
-            Endeavor Tailwind Nextjs Templates
+            আল আহসান ফাউন্ডেশন বাংলাদেশ
           </h5>
         </div>
         <ul className="ps-0 md:ps-5 list-unstyled">
@@ -124,7 +124,7 @@ export const PackageStructure = () => {
                                           (site)
                                         </span>{" "}
                                         <span className="fs-9 text-midnight_text dark:text-white/50 ms-4">
-                                          (Contains all the pages)
+                                          (সব পৃষ্ঠার ফাইল)
                                         </span>
                                       </div>
                                       <div className="flex">

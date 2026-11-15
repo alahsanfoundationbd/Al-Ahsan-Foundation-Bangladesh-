@@ -26,13 +26,13 @@ const CauseList = () => {
                                     <div className='grid grid-cols-2 mt-4 border dark:border-dark_border rounded-md'>
                                         <div className='border-r dark:border-dark_border p-3'>
                                             <h4 className=' text-black dark:text-white/60 text-base font-medium'>
-                                                Raised
+                                                সংগৃহীত
                                             </h4>
                                             <h5 className='text-2xl font-medium text-primary'>{item.raised}</h5>
                                         </div>
                                         <div className='p-3'>
                                             <h4 className=' text-black dark:text-white/60 text-base font-medium'>
-                                                Goal
+                                                লক্ষ্যমাত্রা
                                             </h4>
                                             <h5 className='text-2xl font-medium'>{item.goal}</h5>
                                         </div>

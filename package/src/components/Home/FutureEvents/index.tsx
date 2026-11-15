@@ -8,9 +8,9 @@ const FutureEvents = () => {
     <section className="lg:py-28 py-16 dark:bg-dark">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
         <div className="text-center">
-          <h2 className="text-3xl font-semibold mb-3">Top news summarized briefly</h2>
+          <h2 className="text-3xl font-semibold mb-3">সাম্প্রতিক খবর ও আয়োজন</h2>
           <p className="text-base text-dustGray dark:text-white/60 mx-auto lg:max-w-60%">
-            Join us at local events to make a difference! Connect, volunteer, and support our mission in your community.
+            স্থানীয় আয়োজনে আমাদের সঙ্গে যুক্ত হোন। স্বেচ্ছাসেবী হিসেবে অংশ নিয়ে নিজ এলাকার মানুষের পাশে দাঁড়ান।
           </p>
         </div>
         <div className="flex flex-col items-center gap-12">
@@ -44,7 +44,7 @@ const FutureEvents = () => {
               </Link>
             ))}
           </div>
-          <Link href="/blog" className="text-white text-base bg-primary px-7 py-4 border font-semibold border-primary hover:border-primary hover:bg-transparent hover:text-primary rounded-md cursor-pointer" >View All News</Link>
+          <Link href="/blog" className="text-white text-base bg-primary px-7 py-4 border font-semibold border-primary hover:border-primary hover:bg-transparent hover:text-primary rounded-md cursor-pointer" >সব খবর দেখুন</Link>
         </div>
       </div>
     </section>

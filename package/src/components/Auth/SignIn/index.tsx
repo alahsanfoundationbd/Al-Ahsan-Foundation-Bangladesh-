@@ -19,18 +19,18 @@ const Signin = () => {
     let isValid = true;
 
     if (!loginData.email) {
-      errors.email = "Email is required.";
+      errors.email = "ইমেইল ঠিকানা আবশ্যক।";
       isValid = false;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(loginData.email)) {
-      errors.email = "Please enter a valid email address.";
+      errors.email = "সঠিক ইমেইল ঠিকানা লিখুন।";
       isValid = false;
     }
 
     if (!loginData.password) {
-      errors.password = "Password is required.";
+      errors.password = "পাসওয়ার্ড আবশ্যক।";
       isValid = false;
     } else if (loginData.password.length < 6) {
-      errors.password = "Password must be at least 6 characters long.";
+      errors.password = "পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।";
       isValid = false;
     }
     return isValid;
@@ -47,7 +47,7 @@ const Signin = () => {
       localStorage.setItem("user", JSON.stringify({ user: loginData.email }));
       router.push("/");
     } catch (error) {
-      alert("Something went wrong. Please try again.");
+      alert("সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
     } finally {
       setLoading(false);
     }
@@ -64,7 +64,7 @@ const Signin = () => {
       <span className='z-1 relative my-8 block text-center'>
         <span className='-z-1 absolute left-0 top-1/2 block h-px w-full bg-border dark:bg-dark_border'></span>
         <span className='text-muted dark:text-white/60 relative z-10 inline-block bg-white px-3 text-base dark:bg-dark'>
-          OR
+          অথবা
         </span>
       </span>
 
@@ -72,7 +72,7 @@ const Signin = () => {
         <div className='mb-[22px]'>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="ইমেইল ঠিকানা"
             onChange={(e) =>
               setLoginData({ ...loginData, email: e.target.value })
             }
@@ -82,7 +82,7 @@ const Signin = () => {
         <div className='mb-[22px]'>
           <input
             type="password"
-            placeholder="Password"
+            placeholder="পাসওয়ার্ড"
             onChange={(e) =>
               setLoginData({ ...loginData, password: e.target.value })
             }
@@ -93,7 +93,7 @@ const Signin = () => {
           <button
             type='submit'
             className='flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-primary hover:bg-primary/75 dark:hover:bg-darkprimary! px-5 py-3 text-base text-white font-medium transition duration-300 ease-in-out'>
-            Sign In
+            প্রবেশ করুন
            {loading && <Loader />}
           </button>
         </div>
@@ -102,12 +102,12 @@ const Signin = () => {
         <Link
           href='/forgot-password'
           className='mb-2 inline-block text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary'>
-          Forget Password?
+          পাসওয়ার্ড ভুলে গেছেন?
         </Link>
         <p className='text-body-secondary text-base'>
-          Not a member yet?{' '}
+          এখনও সদস্য হননি? {' '}
           <Link href={'./signup'} className='text-dark dark:text-white hover:text-primary dark:hover:text-primary'>
-            Sign Up
+            নিবন্ধন করুন
           </Link>
         </p>
       </div>

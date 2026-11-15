@@ -10,14 +10,14 @@ const Volunteer = () => {
             <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold text-white mb-6">
-                        Become a volunteer
+                        স্বেচ্ছাসেবক হোন
                     </h2>
                     <p className="text-base text-white lg:max-w-60% mx-auto mb-6">
-                    Join our mission to make a positive impact! As a volunteer, you’ll work directly with communities, bring hope, and help create lasting change.
+                    ইতিবাচক পরিবর্তনের এই উদ্যোগে আমাদের সঙ্গে যুক্ত হোন। স্বেচ্ছাসেবক হিসেবে মানুষের পাশে দাঁড়ান, আশার আলো ছড়ান এবং টেকসই পরিবর্তনে ভূমিকা রাখুন।
                     </p>
                     <div className="flex justify-center ">
                         <button onClick={() => donationInfo?.setIsDonationOpen(true)} className="text-white text-base bg-error px-7 py-4 border font-semibold border-error hover:border-error hover:bg-transparent hover:text-error rounded-md cursor-pointer">
-                            Donate now
+                            এখনই দান করুন
                         </button>
                     </div>
                 </div>

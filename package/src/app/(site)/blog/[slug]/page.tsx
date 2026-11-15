@@ -20,12 +20,12 @@ export async function generateMetadata({ params }: any) {
     "metadata",
   ]);
 
-  const siteName = process.env.SITE_NAME || "Your Site Name";
-  const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+  const siteName = process.env.SITE_NAME || "আল আহসান ফাউন্ডেশন বাংলাদেশ";
+  const authorName = process.env.AUTHOR_NAME || "আল আহসান ফাউন্ডেশন বাংলাদেশ";
 
   if (post) {
     const metadata = {
-      title: `${post.title || "Single Post Page"} | ${siteName}`,
+      title: `${post.title || "ব্লগ নিবন্ধ"} | ${siteName}`,
       author: authorName,
       robots: {
         index: true,
@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: any) {
     return metadata;
   } else {
     return {
-      title: "Not Found",
-      description: "No blog article has been found",
+      title: "পৃষ্ঠা পাওয়া যায়নি",
+      description: "কোনো ব্লগ নিবন্ধ পাওয়া যায়নি।",
       author: authorName,
       robots: {
         index: false,
@@ -88,7 +88,7 @@ export default async function Post({ params }: any) {
                   <div className="w-6 h-6">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" color="var(--token-791e7a5e-b1ee-4e3a-80ff-69f4a953e776, rgb(255, 255, 255))" ><path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clipRule="evenodd"></path></svg>
                   </div>
-                  Go Back
+                  ফিরে যান
                 </div>
               </Link>
               <div
@@ -107,7 +107,7 @@ export default async function Post({ params }: any) {
               </h1>
 
               <div className="flex items-center justify-between mb-8">
-                <div className="bg-black px-3 py-1 w-fit rounded-full"><span className="text-white font-normal">Children</span></div>
+                <div className="bg-black px-3 py-1 w-fit rounded-full"><span className="text-white font-normal">শিশুকল্যাণ</span></div>
                 <p className="text-base font-normal text-dustGray">{format(new Date(post.date), "dd MMM yyyy")}</p>
               </div>
 

@@ -49,7 +49,7 @@ const Hero = () => {
                           {value?.tag_name}
                         </p>
                       </div>
-                      <p className="text-black/70 dark:text-white/60 text-base font-medium">{value?.left_days} days left</p>
+                      <p className="text-black/70 dark:text-white/60 text-base font-medium">{value?.left_days} দিন বাকি</p>
                     </div>
                     <h3 className="text-black dark:text-white text-4xl font-bold mb-6">
                       {value?.title}

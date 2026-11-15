@@ -36,12 +36,12 @@ const Causes = () => {
       <div className='container mx-auto lg:max-w-(--breakpoint-xl) px-4 '>
         <h2
           className='text-center text-3xl font-semibold mb-3'>
-          Causes where need your help
+          আপনার সহায়তা প্রয়োজন এমন কার্যক্রম
         </h2>
         <p className='text-dustGray dark:text-white/60 text-center'>
-          Support essential causes like healthcare, education, hunger relief,
-          and empowering <br className='lg:block hidden' /> vulnerable
-          communities. Together, we can create lasting change!
+          স্বাস্থ্যসেবা, শিক্ষা ও খাদ্য সহায়তার মতো জরুরি কার্যক্রমে পাশে দাঁড়ান,
+          এবং <br className='lg:block hidden' /> সুবিধাবঞ্চিত
+          মানুষের জন্য একসঙ্গে টেকসই পরিবর্তন গড়ে তুলি!
         </p>
         <div className='flex flex-col items-center gap-12'>
           <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-20'>
@@ -67,13 +67,13 @@ const Causes = () => {
                     <div className='grid grid-cols-2 mt-4 border dark:border-dark_border rounded-md'>
                       <div className='border-r dark:border-dark_border p-3'>
                         <h4 className=' text-black dark:text-white/60 text-base font-medium'>
-                          Raised
+                          সংগৃহীত
                         </h4>
                         <h5 className='text-2xl font-medium text-primary'>{item.raised}</h5>
                       </div>
                       <div className='p-3'>
                         <h4 className=' text-black dark:text-white/60 text-base font-medium'>
-                          Goal
+                          লক্ষ্যমাত্রা
                         </h4>
                         <h5 className='text-2xl font-medium'>{item.goal}</h5>
                       </div>
@@ -84,7 +84,7 @@ const Causes = () => {
             ))}
           </div>
           <Link href={"/cause"} className="text-white text-base bg-primary px-7 py-4 border font-semibold border-primary hover:border-primary hover:bg-transparent hover:text-primary rounded-md cursor-pointer">
-            View All Causes</Link>
+            সব কার্যক্রম দেখুন</Link>
         </div>
       </div>
     </section>

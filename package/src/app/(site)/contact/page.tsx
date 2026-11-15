@@ -5,15 +5,16 @@ import Volunteer from "@/components/SharedComponent/Volunteer";
 import React from "react";
 import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Contact | Al-Ahsan Foundation Bangladesh",
+  title: "যোগাযোগ | আল আহসান ফাউন্ডেশন বাংলাদেশ",
 };
 
 const page = () => {
   return (
     <>
       <HeroSub
-        title="Contact"
+        title="যোগাযোগ"
         bgImage="/images/background/contact-banner-img.avif"
       />
       <ContactInfo />

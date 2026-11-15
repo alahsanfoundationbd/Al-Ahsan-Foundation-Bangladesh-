@@ -196,7 +196,7 @@ const Header: React.FC = () => {
             } z-50`}>
           <div className='flex items-center justify-between p-4'>
             <h2 className='text-lg font-bold text-midnight_text dark:text-white'>
-              Menu
+              মেনু
             </h2>
             <button
               onClick={() => setNavbarOpen(false)}

@@ -3,15 +3,16 @@ import BlogList from "@/components/Blog/BlogList";
 import HeroSub from "@/components/SharedComponent/HeroSub";
 import Volunteer from "@/components/SharedComponent/Volunteer";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Blog | Al-Ahsan Foundation Bangladesh",
+  title: "ব্লগ ও সংবাদ | আল আহসান ফাউন্ডেশন বাংলাদেশ",
 };
 
 const BlogPage = () => {
     return (
         <>
             <HeroSub
-                title="Blog"
+                title="ব্লগ ও সংবাদ"
                 bgImage="/images/background/blog-banner-img.avif"
             />
             <BlogList />

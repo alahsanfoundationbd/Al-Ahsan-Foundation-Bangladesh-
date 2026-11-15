@@ -2,7 +2,7 @@ import Signin from '@/components/Auth/SignIn'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sign In | Al-Ahsan Foundation Bangladesh',
+  title: 'লগইন | আল আহসান ফাউন্ডেশন বাংলাদেশ',
 }
 
 const SigninPage = () => {

@@ -14,7 +14,7 @@ const Footer: FC = () => {
             <Logo />
             <div className="mt-6">
               <p className="text-base font-normal text-dustGray dark:text-white/60 mb-6">
-                আপনারা আমাদের ফাউন্ডেশনের অসাধারণ সব সেবাসমূহের ওপর আস্থা রাখতে পারেন। আমরা প্রতিটি সেবা সর্বোচ্চ আন্তরিকতা, নিষ্ঠা ও পেশাদারিত্বের সঙ্গে প্রদান করতে প্রতিশ্রুতিবদ্ধ। পাশাপাশি, আমাদের উন্নত গ্রাহকসেবা আপনাদের জন্য নিশ্চিত করবে একটি সন্তোষজনক, নির্ভরযোগ্য ও আনন্দদায়ক অভিজ্ঞতা।
+                আল আহসান ফাউন্ডেশন বাংলাদেশ শিক্ষা, স্বাস্থ্য ও মানবকল্যাণমূলক কার্যক্রমের মাধ্যমে সুবিধাবঞ্চিত মানুষের পাশে দাঁড়াতে প্রতিশ্রুতিবদ্ধ।
               </p>
             </div>
           </div>
@@ -29,10 +29,10 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <h5 className="text-base font-normal text-black dark:text-white mb-4">
-                    Al-Ahsan Foundation Bangladesh Head Office
+                    আল আহসান ফাউন্ডেশন বাংলাদেশের প্রধান কার্যালয়
                   </h5>
                   <p className="text-base text-dustGray dark:text-white/60">
-                    Dewanganj, Jamalpur, Bangladesh - 2030
+                    দেওয়ানগঞ্জ, জামালপুর, বাংলাদেশ — ২০৩০
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const Footer: FC = () => {
                     href="mailto: alahsanfoundationbangladesh@gmail.com"
                     className="text-base text-black dark:text-white mb-0 hover:text-primary!"
                   >
-                    ala
+                    alahsanfoundationbangladesh@gmail.com
                   </Link>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const Footer: FC = () => {
           </div>
           <div className="lg:col-span-3 md:col-span-4 col-span-6">
             <h4 className="text-base text-black dark:text-white mb-4">
-              Causes
+              আমাদের কার্যক্রম
             </h4>
             <ul className="pl-5">
               {footerLinks.slice(0, 5).map((item, index) => (
@@ -108,13 +108,12 @@ const Footer: FC = () => {
       <div className="border-t border-border dark:border-dark_border">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex items-center justify-between py-6 lg:flex-nowrap flex-wrap lg:gap-0 gap-4">
           <p className="text-base text-dustGray dark:text-white">
-            © All Rights Reserved by{" "}
+            © সর্বস্বত্ব সংরক্ষিত —{" "}
             <Link
-              href="https://getnextjstemplates.com/"
-              target="_blank"
+              href="/"
               className="hover:text-primary!"
             >
-              GetNextjs Templates
+              আল আহসান ফাউন্ডেশন বাংলাদেশ
             </Link>
             .
           </p>

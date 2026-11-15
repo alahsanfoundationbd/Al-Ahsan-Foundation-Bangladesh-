@@ -16,22 +16,22 @@ export const DocNavigation = () => {
     const DocsNav = [
         {
             id:1,
-            navItem:"Package Versions",
+            navItem:"প্যাকেজ সংস্করণ",
             hash:"version"
         },
         {
             id:2,
-            navItem:"Pacakge Structure",
+            navItem:"প্যাকেজের কাঠামো",
             hash:"structure"
         },
         {
             id:3,
-            navItem:"Quick Start",
+            navItem:"দ্রুত শুরু",
             hash:"start"
         },
         {
             id:4,
-            navItem:"Project Configuration",
+            navItem:"প্রকল্পের কনফিগারেশন",
             hash:"configuration"
         },
     ]

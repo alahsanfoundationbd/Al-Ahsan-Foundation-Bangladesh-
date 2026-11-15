@@ -25,21 +25,21 @@ export const Donation = () => {
           <div className="mb-[22px]">
             <input
               type="text"
-              placeholder="First name"
+              placeholder="নামের প্রথম অংশ"
               className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-[22px]">
             <input
               type="text"
-              placeholder="Last name"
+              placeholder="নামের শেষ অংশ"
               className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
           <div className="mb-[22px]">
             <input
               type="email"
-              placeholder="Email address"
+              placeholder="ইমেইল ঠিকানা"
               className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
@@ -47,7 +47,7 @@ export const Donation = () => {
             <input
               type="text"
               ref={inputRef}
-              placeholder="Choose donation amount"
+              placeholder="অনুদানের পরিমাণ বেছে নিন"
               className="w-full rounded-md border placeholder:text-gray-400  border-border dark:border-dark_border border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition  focus:border-primary focus-visible:shadow-none dark:border-border_color dark:text-white dark:focus:border-primary"
             />
           </div>
@@ -78,7 +78,7 @@ export const Donation = () => {
 
           <div className="flex gap-2 items-center">
                                 <input type="checkbox" id="account" name="account" />
-                                <label htmlFor="account" className="text-muted dark:text-white/60 text-base">I would like to donate anonymously</label>
+                                <label htmlFor="account" className="text-muted dark:text-white/60 text-base">আমি পরিচয় গোপন রেখে অনুদান দিতে চাই</label>
                             </div>
                     
           <div className="mb-0 mt-6">

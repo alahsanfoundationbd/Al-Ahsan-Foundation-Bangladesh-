@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/Common/Breadcrumb'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sign Up | Al-Ahsan Foundation Bangladesh',
+  title: 'নিবন্ধন | আল আহসান ফাউন্ডেশন বাংলাদেশ',
 }
 
 const SignupPage = () => {
