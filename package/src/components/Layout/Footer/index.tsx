@@ -45,10 +45,10 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <Link
-                    href="tel:1(888)1234567"
+                    href="tel:+8809611399315"
                     className="text-base text-black dark:text-white mb-0 hover:text-primary!"
                   >
-                    359 (0) 456 316
+                    +8809611399315
                   </Link>
                 </div>
               </div>
