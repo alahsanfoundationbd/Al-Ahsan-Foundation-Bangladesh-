@@ -60,11 +60,11 @@ const Hero = () => {
                     <div className="grid grid-cols-2 rounded-md border border-border dark:border-dark_border mb-5">
                       <div className="col-span-1 border-r border-border dark:border-dark_border px-3 py-3">
                         <p className="text-base font-medium text-black dark:text-white/60 ">Raised</p>
-                        <h4 className="text-2xl text-secondary">${value?.raised}</h4>
+                        <h4 className="text-2xl text-secondary">৳{value?.raised}</h4>
                       </div>
                       <div className="col-span-1 px-3 py-3">
                         <p className="text-base font-medium text-black dark:text-white/60">Goal</p>
-                        <h4 className="text-2xl text-midnight_text dark:text-white">${value?.goal}</h4>
+                        <h4 className="text-2xl text-midnight_text dark:text-white">৳{value?.goal}</h4>
                       </div>
                     </div>
                     <div className="flex justify-center">
