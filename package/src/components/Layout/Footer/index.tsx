@@ -29,7 +29,7 @@ const Footer: FC = () => {
                 />
                 <div className="">
                   <h5 className="text-base font-normal text-black dark:text-white mb-4">
-                    Endeavor Head Office
+                    Al-Ahsan Foundation Bangladesh Head Office
                   </h5>
                   <p className="text-base text-dustGray dark:text-white/60">
                     134, Cornish Building, Some Near by area, New York, USA - 34556
