@@ -86,7 +86,7 @@ export const Donation = () => {
               type="submit"
               className="text-white w-full text-base bg-linear-to-r from-primary to-secondary font-semibold border border-transparent py-4 px-7 rounded-md hover:text-primary hover:border-primary hover:from-transparent hover:to-transparent cursor-pointer"
             >
-              Donate now
+              এখনই দান করুন
             </button>
           </div>
         </form>
