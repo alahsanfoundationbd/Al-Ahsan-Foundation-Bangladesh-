@@ -59,11 +59,11 @@ const Hero = () => {
                     </p>
                     <div className="grid grid-cols-2 rounded-md border border-border dark:border-dark_border mb-5">
                       <div className="col-span-1 border-r border-border dark:border-dark_border px-3 py-3">
-                        <p className="text-base font-medium text-black dark:text-white/60 ">Raised</p>
+                        <p className="text-base font-medium text-black dark:text-white/60 ">সংগৃহীত তহবিল</p>
                         <h4 className="text-2xl text-secondary">৳{value?.raised}</h4>
                       </div>
                       <div className="col-span-1 px-3 py-3">
-                        <p className="text-base font-medium text-black dark:text-white/60">Goal</p>
+                        <p className="text-base font-medium text-black dark:text-white/60">লক্ষ্যমাত্রা</p>
                         <h4 className="text-2xl text-midnight_text dark:text-white">৳{value?.goal}</h4>
                       </div>
                     </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                         onClick={() => donationInfo?.setIsDonationOpen(true)}
                         className="text-white text-base bg-error px-7 py-4 border font-semibold border-error hover:border-error hover:bg-transparent hover:text-error rounded-md cursor-pointer"
                       >
-                        Donate now
+                        এখনই দান করুন
                       </button>
                       <Test />
                     </div>
