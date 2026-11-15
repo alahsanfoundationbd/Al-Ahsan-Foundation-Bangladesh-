@@ -1,6 +1,6 @@
 import { HeaderItem } from "@/types/menu";
 
-export const headerData: HeaderItem[] = [
+export const defaultHeaderData: HeaderItem[] = [
   { label: "হোম", href: "/" },
   {
     label: "আমাদের কার্যক্রম",
@@ -29,3 +29,6 @@ export const headerData: HeaderItem[] = [
   { label: "যোগাযোগ", href: "/contact" },
   { label: "ডকুমেন্ট", href: "/documentation#version" },
 ];
+
+
+// Dynamic menu defaults are replaced with database-backed items in SiteProvider/admin edits.

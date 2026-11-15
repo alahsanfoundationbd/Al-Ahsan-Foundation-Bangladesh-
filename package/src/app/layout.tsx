@@ -8,6 +8,7 @@ import Aoscompo from "@/utils/aos";
 import { DonationProvider } from "./context/donationContext";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
+import { SiteProvider } from "./context/SiteContext";
 const bricolage = Noto_Sans_Bengali({ subsets: ["bengali", "latin"] });
 import NextTopLoader from 'nextjs-toploader';
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <DonationProvider>
         <AuthDialogProvider>
       <SessionProviderComp session={undefined}>
+        <SiteProvider>
         <ThemeProvider
           attribute="class"
           enableSystem={true}
@@ -37,6 +39,7 @@ export default function RootLayout({
           </Aoscompo>
           <ScrollToTop />
         </ThemeProvider>
+        </SiteProvider>
         </SessionProviderComp>
         </AuthDialogProvider>
         </DonationProvider>
