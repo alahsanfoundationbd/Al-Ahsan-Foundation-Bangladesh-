@@ -27,10 +27,10 @@ const Testimonial = () => {
         <section className="lg:py-28 py-16 bg-grey dark:bg-darkmode">
             <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <h2 className="text-3xl font-medium mb-3 text-center">
-                    Check what our donators are saying
+                    আমাদের দাতারা কী বলছেন
                 </h2>
                 <p className="text-base text-center text-dustGray dark:text-white/60 lg:max-w-60% mx-auto">
-                Discover heartfelt stories from our supporters who are helping us make a difference. See how their contributions are changing lives and inspiring hope!
+                আমাদের পাশে থাকা সহায়তাকারীদের অভিজ্ঞতা জানুন। তাঁদের অবদান কীভাবে মানুষের জীবনে পরিবর্তন ও আশার আলো আনছে, তা পড়ুন।
                 </p>
                 <div className="mt-20">
                     <Slider {...settings}>

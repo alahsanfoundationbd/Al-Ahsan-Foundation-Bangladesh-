@@ -11,7 +11,7 @@ const NotFound = () => {
             <div className="relative mx-auto aspect-129/138 max-w-[357px] text-center">
               <Image
                 src="/images/background/404.svg"
-                alt="image"
+                alt="পৃষ্ঠা পাওয়া যায়নি"
                 width={0}
                 height={0}
                 layout="responsive"
@@ -54,7 +54,7 @@ const NotFound = () => {
                 </svg>
               </div>
               <h3 className="mb-5 text-2xl font-semibold text-dark dark:text-white">
-                We Can&#39;t Seem to Find The Page You&#39;re Looking For.
+                আপনার খোঁজা পৃষ্ঠাটি খুঁজে পাওয়া যায়নি।
               </h3>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">
                 Oops! The page you are looking for does not exist. It might have
@@ -64,7 +64,7 @@ const NotFound = () => {
                 href="/"
                 className="rounded-md px-7 py-3 text-base font-medium text-white transition hover:bg-darkprimary bg-primary"
               >
-                Go To Home
+                হোম পেজে ফিরে যান
               </Link>
             </div>
           </div>

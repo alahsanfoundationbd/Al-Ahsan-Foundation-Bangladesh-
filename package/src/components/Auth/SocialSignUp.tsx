@@ -8,7 +8,7 @@ const SocialSignUp = () => {
         <button
           onClick={() => signIn('google')}
           className='flex w-full items-center justify-center gap-2.5 rounded-lg border border-solid hover:bg-stroke border-stroke p-3.5 text-dark duration-200 ease-in  dark:border-dark_border dark:text-white dark:hover:bg-primary/10 hover:bg-primary/10 hover:cursor-pointer'>
-          Sign Up
+          নিবন্ধন করুন
           <svg
             width='23'
             height='22'
@@ -49,7 +49,7 @@ const SocialSignUp = () => {
         <button
           onClick={() => signIn('github')}
           className='flex w-full items-center justify-center gap-2.5 rounded-lg border border-solid hover:bg-stroke border-stroke p-3.5 text-dark duration-200 ease-in  dark:border-dark_border dark:text-white dark:hover:bg-primary/10 hover:bg-primary/10 hover:cursor-pointer'>
-          Sign Up
+          নিবন্ধন করুন
           <svg
             width='22'
             height='22'

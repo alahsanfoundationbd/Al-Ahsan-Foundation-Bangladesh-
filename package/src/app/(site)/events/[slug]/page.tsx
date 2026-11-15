@@ -1,7 +1,8 @@
 import EventDetail from "@/components/Events/EventDetail/EventDetail";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
-    title: "Event Detail | Al-Ahsan Foundation Bangladesh",
+    title: "ইভেন্টের বিবরণ | আল আহসান ফাউন্ডেশন বাংলাদেশ",
 };
 
 const Page = () => {

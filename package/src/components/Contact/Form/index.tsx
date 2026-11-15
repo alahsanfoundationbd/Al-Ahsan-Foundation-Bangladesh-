@@ -63,11 +63,11 @@ const ContactForm = () => {
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
             <div className="lg:col-span-6 lg:order-1 order-2">
-              <h2 className="max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white">Get online consultation</h2>
+              <h2 className="max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white">আমাদের সঙ্গে যোগাযোগ করুন</h2>
               <form onSubmit={handleSubmit} className="flex flex-wrap w-full m-auto justify-between">
                 <div className="sm:flex gap-3 w-full">
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="first-name" className="pb-3 inline-block text-base">First Name*</label>
+                    <label htmlFor="first-name" className="pb-3 inline-block text-base">নামের প্রথম অংশ*</label>
                     <input
                       id='firstname'
                       type='text'
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     />
                   </div>
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="last-name" className="pb-3 inline-block text-base">Last Name*</label>
+                    <label htmlFor="last-name" className="pb-3 inline-block text-base">নামের শেষ অংশ*</label>
                     <input
                       id='lastname'
                       type='text'
@@ -91,7 +91,7 @@ const ContactForm = () => {
                 </div>
                 <div className="sm:flex gap-3 w-full">
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="email" className="pb-3 inline-block text-base">Email address*</label>
+                    <label htmlFor="email" className="pb-3 inline-block text-base">ইমেইল ঠিকানা*</label>
                     <input
                       id='email'
                       type='email'
@@ -102,27 +102,27 @@ const ContactForm = () => {
                     />
                   </div>
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="SpecialistSpecialist" className="pb-3 inline-block text-base">Specialist*</label>
+                    <label htmlFor="SpecialistSpecialist" className="pb-3 inline-block text-base">বিষয়ের ধরন*</label>
                     <select
                       name="specialist"
                       id="specialist"
                       value={formData.specialist}
                       onChange={handleChange} className="w-full text-base px-4 py-2.5 rounded-lg border-border dark:text-white border-solid dark:bg-dark border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0">
-                      <option value="">Choose a specialist</option>
-                      <option value="Baking &amp; Pastry">
-                        Choose a specialist
+                      <option value="">বিষয় বেছে নিন</option>
+                      <option value="অনুদান ও সহায়তা">
+                        বিষয় বেছে নিন
                       </option>
-                      <option value="Exotic Cuisine">Exotic Cuisine</option>
-                      <option value="French Desserts">French Desserts</option>
-                      <option value="Seafood &amp; Wine">
-                        Choose a specialist
+                      <option value="স্বেচ্ছাসেবক কার্যক্রম">স্বেচ্ছাসেবক কার্যক্রম</option>
+                      <option value="সাধারণ জিজ্ঞাসা">সাধারণ জিজ্ঞাসা</option>
+                      <option value="অন্যান্য বিষয়">
+                        বিষয় বেছে নিন
                       </option>
                     </select>
                   </div>
                 </div>
                 <div className="sm:flex gap-3 w-full">
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="date" className="pb-3 inline-block text-base">Date*</label>
+                    <label htmlFor="date" className="pb-3 inline-block text-base">তারিখ*</label>
                     <input
                       id='date'
                       type='date'
@@ -133,7 +133,7 @@ const ContactForm = () => {
                     />
                   </div>
                   <div className="mx-0 my-2.5 flex-1">
-                    <label htmlFor="time" className="pb-3 inline-block text-base">Time*</label>
+                    <label htmlFor="time" className="pb-3 inline-block text-base">সময়*</label>
                     <input
                       id='time'
                       type='time'
@@ -146,7 +146,7 @@ const ContactForm = () => {
                 </div>
                 <div className="mx-0 my-2.5 w-full">
                   <button type="submit" className="bg-linear-to-r from-primary to-secondary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:from-transparent hover:to-transparent hover:text-primary border hover:border-primary cursor-pointer">
-                    Make an appointment
+                    বার্তা পাঠান
                   </button>
                 </div>
               </form>
@@ -155,7 +155,7 @@ const ContactForm = () => {
                   <div>
                     <Image src={"/images/icons/icon-right.svg"} alt="right-icon" width={20} height={20} />
                   </div>
-                  <p className="text-secondary">Great!!! Email has been Successfully Sent. We will get in touch asap.</p>
+                  <p className="text-secondary">ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে। আমরা যত দ্রুত সম্ভব যোগাযোগ করব।</p>
                 </div>
               )}
             </div>

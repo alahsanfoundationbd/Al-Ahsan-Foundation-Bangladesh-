@@ -28,7 +28,7 @@ const EventDetails: FC<EventProps> = ({
 }) => {
   const formattedDate = eventdate
     ? format(new Date(eventdate), "MMM dd, yyyy")
-    : "Date not available";
+    : "তারিখ পাওয়া যায়নি";
   return (
     <section className="sm:mt-28 pt-32 sm:pb-28 pb-12 dark:bg-dark">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
@@ -50,13 +50,13 @@ const EventDetails: FC<EventProps> = ({
             <p className="text-dustGray dark:text-white/60 text-base my-8">{detail}</p>
           </div>
           <div className="lg:col-span-3 md:col-span-5 sm:col-span-6 col-span-12 lg:mt-0 mt-8">
-            <h4 className="text-darktext text-lg font-medium mb-6">Info</h4>
+            <h4 className="text-darktext text-lg font-medium mb-6">তথ্য</h4>
             <div className="pb-6 border-b border-border mb-6 dark:border-dark_border">
               <table>
                 <tbody>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Category:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">ধরন:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">{category}</p>
@@ -64,7 +64,7 @@ const EventDetails: FC<EventProps> = ({
                   </tr>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Location:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">স্থান:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">{location}</p>
@@ -72,7 +72,7 @@ const EventDetails: FC<EventProps> = ({
                   </tr>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Date:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">তারিখ:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">
@@ -82,7 +82,7 @@ const EventDetails: FC<EventProps> = ({
                   </tr>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Duration:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">সময়কাল:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">{duration}</p>
@@ -90,7 +90,7 @@ const EventDetails: FC<EventProps> = ({
                   </tr>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Type:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">আয়োজনের ধরন:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">{type}</p>
@@ -98,7 +98,7 @@ const EventDetails: FC<EventProps> = ({
                   </tr>
                   <tr className="">
                     <td>
-                      <h5 className="text-black dark:text-white/60 text-base pb-4">Entrants:</h5>
+                      <h5 className="text-black dark:text-white/60 text-base pb-4">অংশগ্রহণকারী:</h5>
                     </td>
                     <td>
                       <p className="text-dustGray dark:text-white/60 text-base pb-4 pl-4">{entrants}</p>
@@ -108,7 +108,7 @@ const EventDetails: FC<EventProps> = ({
               </table>
             </div>
             <div className="flex items-center justify-between">
-              <h5 className="text-lg font-medium text-darktext">Share</h5>
+              <h5 className="text-lg font-medium text-darktext">শেয়ার করুন</h5>
               <div className="flex items-center gap-4">
                 <Link href="#">
                   <Image

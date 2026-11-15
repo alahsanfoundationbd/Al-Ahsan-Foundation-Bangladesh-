@@ -53,7 +53,7 @@ export const Introduction = () => {
         )}
 
             <div className="flex item-center justify-between">
-            <h3 className=" text-black text-2xl mt-4 sm:mt-20 lg:mt-4 font-semibold mb-6 dark:text-white" >Package Versions</h3>
+            <h3 className=" text-black text-2xl mt-4 sm:mt-20 lg:mt-4 font-semibold mb-6 dark:text-white" >প্যাকেজ সংস্করণ</h3>
             <button onClick={() => setDocNavbarOpen(true)} className="p-0"> <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" /></button>
             </div>
             
@@ -62,7 +62,7 @@ export const Introduction = () => {
                     PackageVersions && PackageVersions.map((item)=>{
                         return(
                             <div key={item.id} className="lg:w-1/5 text-center  lg:border-e lg:last:border-e-0 border-border dark:border-dark_border">
-                            <Image src={item.img} alt="npm-package"  className=" mx-auto w-10 h-10 " />
+                            <Image src={item.img} alt="প্যাকেজ"  className=" mx-auto w-10 h-10 " />
                             <h5 className="text-2xl font-bold mt-3.5 dark:text-white" >{`v${item.version}`}</h5>
                             <p className="text-base font-medium text-midnight_text dark:text-white/50">{item.packageName}</p>
                         </div>
@@ -71,9 +71,9 @@ export const Introduction = () => {
                 }
               </div>
               <div className="mt-5">
-              <p className="text-base font-medium text-midnight_text dark:text-white/50">Endeavor Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
-              <p className="text-base font-medium text-midnight_text dark:text-white/50">These theme is ready to use and you can totally customize as per your requirement.</p>
-              <p className="text-base font-medium text-midnight_text dark:text-white/50">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">এই ওয়েবসাইট Next.js ও Tailwind CSS ব্যবহার করে তৈরি।</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">ওয়েবসাইটের প্রয়োজন অনুযায়ী এই থিমের নকশা ও বিষয়বস্তু পরিবর্তন করা যায়।</p>
+              <p className="text-base font-medium text-midnight_text dark:text-white/50">এই প্রকল্প পরিবর্তনের জন্য Next.js, React, Tailwind CSS ও JSX সম্পর্কে ধারণা থাকা সহায়ক।</p>
               </div>
 
          </div>
@@ -82,8 +82,8 @@ export const Introduction = () => {
           className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
         >
           <div className="flex items-center justify-between p-4">
-            <h2 className="text-lg font-bold text-midnight_text dark:text-white">Docs Menu</h2>
-            <button onClick={() => setDocNavbarOpen(false)} aria-label="Close mobile menu">
+            <h2 className="text-lg font-bold text-midnight_text dark:text-white">ডকুমেন্টেশন মেনু</h2>
+            <button onClick={() => setDocNavbarOpen(false)} aria-label="মোবাইল মেনু বন্ধ করুন">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="dark:text-white">
                 <path
                   fill="none"

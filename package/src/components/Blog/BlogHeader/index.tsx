@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props) {
         "metadata",
     ]);
 
-    const siteName = process.env.SITE_NAME || "Your Site Name";
-    const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+    const siteName = process.env.SITE_NAME || "আল আহসান ফাউন্ডেশন বাংলাদেশ";
+    const authorName = process.env.AUTHOR_NAME || "আল আহসান ফাউন্ডেশন বাংলাদেশ";
 
     if (post) {
         const metadata = {
-            title: `${post.title || "Single Post Page"} | ${siteName}`,
+            title: `${post.title || "ব্লগ নিবন্ধ"} | ${siteName}`,
             author: authorName,
             robots: {
                 index: true,
@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: Props) {
         return metadata;
     } else {
         return {
-            title: "Not Found",
-            description: "No blog article has been found",
+            title: "পৃষ্ঠা পাওয়া যায়নি",
+            description: "কোনো ব্লগ নিবন্ধ পাওয়া যায়নি।",
             author: authorName,
             robots: {
                 index: false,
@@ -82,7 +82,7 @@ export default async function BlogHead({ params }: Props) {
                                 <span className="text-base text-midnight_text pr-7 border-r border-solid border-white w-fit">
                                     {format(new Date(post.date), "dd MMM yyyy")}
                                 </span>
-                                <span className="text-base text-midnight_text sm:pl-7 pl-0 w-fit">13 Comments</span>
+                                <span className="text-base text-midnight_text sm:pl-7 pl-0 w-fit">১৩টি মন্তব্য</span>
                             </div>
                             <h2 className="text-midnight_text pt-7 text-[40px] leading-tight font-bold">
                                 {post.title}
@@ -99,8 +99,8 @@ export default async function BlogHead({ params }: Props) {
                                 style={{ width: 'auto', height: 'auto' }}
                             />
                             <div>
-                                <span className="text-[22px] leading-tight text-midnight_text">Silicaman</span>
-                                <p className="text-xl text-midnight_text">Author</p>
+                                <span className="text-[22px] leading-tight text-midnight_text">আল আহসান ফাউন্ডেশন</span>
+                                <p className="text-xl text-midnight_text">লেখক</p>
                             </div>
                         </div>
                     </div>

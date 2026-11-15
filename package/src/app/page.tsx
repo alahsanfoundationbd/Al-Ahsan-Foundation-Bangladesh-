@@ -9,7 +9,7 @@ import Newsletter from '@/components/Home/NewsLetter';
 import Testimonial from '@/components/Home/Testimonial';
 import Volunteer from '@/components/SharedComponent/Volunteer';
 export const metadata: Metadata = {
-  title: "Al-Ahsan Foundation Bangladesh",
+  title: "হোম | আল আহসান ফাউন্ডেশন বাংলাদেশ",
 };
 
 export default function Home() {

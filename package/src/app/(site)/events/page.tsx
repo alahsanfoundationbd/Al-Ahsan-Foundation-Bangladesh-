@@ -2,15 +2,16 @@ import HeroSub from "@/components/SharedComponent/HeroSub";
 import EventList from "@/components/Events/EventList";
 import Volunteer from "@/components/SharedComponent/Volunteer";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
-    title: "Event List | Al-Ahsan Foundation Bangladesh",
+    title: "ইভেন্ট সমূহ | আল আহসান ফাউন্ডেশন বাংলাদেশ",
 };
 
 const Page = () => {
     return (
         <>
             <HeroSub
-                title="Event List"
+                title="ইভেন্ট সমূহ"
             />
             <EventList />
             <Volunteer />

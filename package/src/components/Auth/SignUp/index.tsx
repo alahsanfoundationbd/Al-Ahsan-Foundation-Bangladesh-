@@ -21,20 +21,20 @@ const SignUp = () => {
   });
 
   const validateName = (name: string) => {
-    if (!name.trim()) return "Name is required";
-    if (!/^[a-zA-Z\s]{3,}$/.test(name)) return "Name must be at least 3 characters and contain only letters";
+    if (!name.trim()) return "নাম আবশ্যক।";
+    if (!/^[a-zA-Z\s]{3,}$/.test(name)) return "নাম কমপক্ষে ৩ অক্ষরের হতে হবে এবং শুধু অক্ষর ব্যবহার করুন।";
     return "";
   };
 
   const validateEmail = (email: string) => {
-    if (!email.trim()) return "Email is required";
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) return "Enter a valid email address";
+    if (!email.trim()) return "ইমেইল ঠিকানা আবশ্যক।";
+    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) return "সঠিক ইমেইল ঠিকানা লিখুন।";
     return "";
   };
 
   const validatePassword = (password: string) => {
-    if (!password.trim()) return "Password is required";
-    if (password.length < 6) return "Password must be at least 6 characters";
+    if (!password.trim()) return "পাসওয়ার্ড আবশ্যক।";
+    if (password.length < 6) return "পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।";
     return "";
   };
 
@@ -86,7 +86,7 @@ const SignUp = () => {
       <span className='z-1 relative my-8 block text-center'>
         <span className='-z-1 absolute left-0 top-1/2 block h-px w-full bg-border dark:bg-dark_border'></span>
         <span className='text-muted dark:text-white/60 relative z-10 inline-block bg-white px-3 text-base dark:bg-dark'>
-          OR
+          অথবা
         </span>
       </span>
 
@@ -94,7 +94,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type="text"
-            placeholder="Name"
+            placeholder="আপনার নাম"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -106,7 +106,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="ইমেইল ঠিকানা"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -118,7 +118,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type="password"
-            placeholder="Password"
+            placeholder="পাসওয়ার্ড"
             name="password"
             value={formData.password}
             onChange={handleChange}
@@ -131,26 +131,26 @@ const SignUp = () => {
           <button
             type='submit'
             className='flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-primary hover:bg-primary/75 dark:hover:bg-darkprimary! px-5 py-3 text-base text-white font-medium transition duration-300 ease-in-out'>
-            Sign Up {loading && <Loader />}
+            নিবন্ধন করুন {loading && <Loader />}
           </button>
         </div>
       </form>
 
       <p className='text-body-secondary mb-4 text-base'>
-        By creating an account you are agree with our{' '}
+        অ্যাকাউন্ট তৈরি করলে আপনি আমাদের{' '}
         <a href='/#' className='text-dark dark:text-white hover:text-primary dark:hover:text-primary'>
-          Privacy
+          গোপনীয়তা নীতিতে
         </a>{' '}
         and{' '}
         <a href='/#' className='text-dark dark:text-white hover:text-primary dark:hover:text-primary'>
-          Policy
+          সম্মতি দিচ্ছেন
         </a>
       </p>
 
       <p className='text-body-secondary text-base'>
-        Already have an account?
+        ইতিমধ্যে অ্যাকাউন্ট আছে?
         <Link href={'./signin'} className='pl-2 text-dark dark:text-white hover:text-primary dark:hover:text-primary'>
-          Sign In
+          প্রবেশ করুন
         </Link>
       </p>
     </>

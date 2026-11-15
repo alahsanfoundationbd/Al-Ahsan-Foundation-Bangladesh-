@@ -3,7 +3,7 @@ import Signin from '@/components/Auth/SignIn'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Forgot password | Al-Ahsan Foundation Bangladesh',
+  title: 'পাসওয়ার্ড পুনরুদ্ধার | আল আহসান ফাউন্ডেশন বাংলাদেশ',
 }
 
 const SigninPage = () => {

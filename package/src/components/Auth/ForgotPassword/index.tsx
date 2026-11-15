@@ -15,11 +15,11 @@ const ForgotPassword = () => {
     // Function to validate email
     const validateEmail = (value: string) => {
         if (!value) {
-            setEmailError("Email is required.");
+            setEmailError("ইমেইল ঠিকানা আবশ্যক।");
             return false;
         }
         if (!emailRegex.test(value)) {
-            setEmailError("Invalid email format.");
+            setEmailError("ইমেইলের সঠিক বিন্যাস লিখুন।");
             return false;
         }
         const domain = value.split("@")[1];
@@ -50,10 +50,10 @@ const ForgotPassword = () => {
                         <div className="flex flex-col items-center gap-5">
                             <div className="flex flex-col gap-2">
                                 <h2 className="text-dark dark:text-white text-center text-3xl font-semibold mb-1">
-                                    Forgot Your Password?
+                                    পাসওয়ার্ড ভুলে গেছেন?
                                 </h2>
                                 <p className="text-base text-muted dark:text-white/60 text-center">
-                                    Please check your inbox for the new password.
+                                    পাসওয়ার্ড পুনরুদ্ধারের নির্দেশনার জন্য আপনার ইমেইল দেখুন।
                                 </p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const ForgotPassword = () => {
                             <div className="mb-5 text-left">
                                 <input
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="ইমেইল ঠিকানা"
                                     name="email"
                                     value={email}
                                     onChange={(e) => {
@@ -82,7 +82,7 @@ const ForgotPassword = () => {
                                     className="flex w-full cursor-pointer items-center justify-center rounded-md border border-primary bg-primary hover:bg-primary/75 dark:hover:bg-darkprimary! px-5 py-3 text-base text-white font-medium transition duration-300 ease-in-out"
                                     disabled={loader}
                                 >
-                                    {loader ? <Loader /> : "Send Email"}
+                                    {loader ? <Loader /> : "ইমেইল পাঠান"}
                                 </button>
                             </div>
                         </form>

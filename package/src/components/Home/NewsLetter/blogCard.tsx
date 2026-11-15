@@ -21,7 +21,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                         {title}
                     </h4>
                     <p className="text-dustGray dark:text-white/60 text-base">
-                        Mark Freeman - May 1, 2025
+                        আল আহসান ফাউন্ডেশন বাংলাদেশ
                     </p>
                 </div>
             </Link>

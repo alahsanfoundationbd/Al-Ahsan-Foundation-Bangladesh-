@@ -7,10 +7,10 @@ const Help = () => {
             <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
                 <div className="text-center">
                     <h2 className="text-3xl mb-3 font-semibold">
-                        How can you help us?
+                        আপনি কীভাবে পাশে দাঁড়াতে পারেন?
                     </h2>
                     <p className="text-dustGray dark:text-white/60 text-base">
-                        You can support us by donating, volunteering your time, or providing food supplies.<br className="lg:block hidden" /> Every effort makes a difference!
+                        অনুদান দিয়ে, স্বেচ্ছাসেবী হয়ে কিংবা খাদ্যসামগ্রী দিয়ে আমাদের কার্যক্রমে সহায়তা করুন।<br className="lg:block hidden" /> আপনার প্রতিটি প্রচেষ্টাই গুরুত্বপূর্ণ!
                     </p>
                     <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8">
                         {helpdata.map((item, index) => (
