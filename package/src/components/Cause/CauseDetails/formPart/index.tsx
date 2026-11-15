@@ -14,13 +14,13 @@ const FormPart = () => {
             <div className="bg-grey dark:bg-darkmode px-8 py-14 rounded-sm border border-border dark:border-dark_border mb-8 ">
                 <div className="border border-border dark:border-dark_border py-5 px-10 rounded-md mb-11">
                     <p className="text-sm text-muted dark:text-white/60">
-                        The maximum custom donation amount for this form is $999,999.99
+                        The maximum custom donation amount for this form is ৳999,999.99
                     </p>
                 </div>
                 <form className="">
                     <div className="flex items-center mb-4">
                         <label htmlFor="amount2" className="rounded-s-lg bg-white border border-border dark:bg-darkmode dark:border-dark_border px-4 py-5 text-base ">
-                            $
+                            ৳
                         </label>
                         <input type="number" name="amount" id="amount2" placeholder="999,999.99" className="px-4 py-5 border rounded-e-lg dark:focus:border-primary focus:border-primary dark:bg-darkmode focus-visible:outline-hidden dark:border-dark_border text-base" />
                     </div>
@@ -75,7 +75,7 @@ const FormPart = () => {
                             <label htmlFor="amount" className="md:rounded-none md:rounded-s-lg rounded-lg  bg-white whitespace-nowrap dark:bg-darkmode dark:border-dark_border border border-border px-4 py-5 text-base ">
                                 Donation total:
                             </label>
-                            <input type="number" name="amount" id="amount" placeholder="$2,001,230.00" className="px-4 py-5 text-base border md:rounded-none md:rounded-e-lg rounded-lg dark:focus:border-primary focus:border-primary dark:bg-darkmode focus-visible:outline-hidden dark:border-dark_border placeholder:text-primary/30" />
+                            <input type="number" name="amount" id="amount" placeholder="৳2,001,230.00" className="px-4 py-5 text-base border md:rounded-none md:rounded-e-lg rounded-lg dark:focus:border-primary focus:border-primary dark:bg-darkmode focus-visible:outline-hidden dark:border-dark_border placeholder:text-primary/30" />
                         </div>
                         <button onClick={(e) => {
                             e.preventDefault();
