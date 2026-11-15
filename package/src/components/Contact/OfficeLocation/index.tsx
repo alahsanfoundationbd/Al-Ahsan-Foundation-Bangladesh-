@@ -19,7 +19,7 @@ const Location = () => {
                 <p className="text-lg text-white font-normal max-w-72">3502 Marcus Street Geraldine Zip code 35974</p>
               </div>
               <div className="col-span-3">
-                <Link href="mailto:headoffice@endeavor.com" className="text-lg text-white hover:text-black font-semibold">headoffice@endeavor.com</Link>
+                <Link href="mailto: alahsanfoundationbangladesh@gmail.com" className="text-lg text-white hover:text-black font-semibold">headoffice@endeavor.com</Link>
                 <Link href="tel:731-621-5503" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call:</span>731-621-5503</Link>
               </div>
             </div>
@@ -31,7 +31,7 @@ const Location = () => {
                 <p className="text-lg text-white font-normal max-w-72">4292 Mapleview Drive Greenfield Zip code 38230 </p>
               </div>
               <div className="col-span-3">
-                <Link href="mailto:office@endeavor.com" className="text-lg text-white hover:text-black font-semibold">office@endeavor.com</Link>
+                <Link href="mailto: alahsanfoundationbangladesh@gmail.com" className="text-lg text-white hover:text-black font-semibold">office@endeavor.com</Link>
                 <Link href="tel:731-235-7993" className="text-lg font-semibold text-white hover:text-black flex items-center gap-2 w-fit"><span className="text-white">Call</span>731-235-7993</Link>
               </div>
             </div>
